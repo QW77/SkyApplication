@@ -58,8 +58,6 @@ public class MainActivity extends BaseViewActivity {
     TabRaidoButton mine;
     @BindView(R.id.app_home_openIM)
     TabRaidoButton openIM;
-//    @BindView(R.id.app_test)
-//    TabRaidoButton test;
     @BindView(R.id.driver_content_fl)
     FrameLayout driverContentFl;
 
@@ -71,7 +69,6 @@ public class MainActivity extends BaseViewActivity {
     private int lastIndexOfPage = -1;
     private int currentPageIndex = 0;
     private long exitTime;
-    private String target;
 
     int flag = -1;
     private Fragment conversationFragment;
@@ -209,13 +206,8 @@ public class MainActivity extends BaseViewActivity {
                 break;
             case R.id.app_home_openIM:
                 //修改第三处
-//                startActivity(new Intent(context, OpenIMLoginActivity.class));
                 displayPage(AppKey.HomePage.openIM);
                 break;
-            //测试界面
-//            case R.id.app_test:
-//                startActivity(new Intent(context, TestActivity.class));
-//                break;
         }
     }
 
@@ -288,7 +280,6 @@ public class MainActivity extends BaseViewActivity {
                 message.setCheckedView(false);
                 openIM.setCheckedView(false);
                 mine.setCheckedView(false);
-//                test.setCheckedView(false);
                 break;
             case 2:
                 homePage.setCheckedView(false);
@@ -296,7 +287,6 @@ public class MainActivity extends BaseViewActivity {
                 message.setCheckedView(true);
                 openIM.setCheckedView(false);
                 mine.setCheckedView(false);
-//                test.setCheckedView(false);
                 break;
             case 3:
                 homePage.setCheckedView(false);
@@ -304,7 +294,6 @@ public class MainActivity extends BaseViewActivity {
                 message.setCheckedView(false);
                 mine.setCheckedView(true);
                 openIM.setCheckedView(false);
-//                test.setCheckedView(false);
                 break;
             case 4:
                 homePage.setCheckedView(false);
@@ -312,7 +301,6 @@ public class MainActivity extends BaseViewActivity {
                 message.setCheckedView(false);
                 mine.setCheckedView(false);
                 openIM.setCheckedView(true);
-//                test.setCheckedView(false);
                 break;
             case 5:
                 homePage.setCheckedView(false);
@@ -320,7 +308,6 @@ public class MainActivity extends BaseViewActivity {
                 message.setCheckedView(false);
                 mine.setCheckedView(false);
                 openIM.setCheckedView(false);
-//                test.setCheckedView(true);
                 break;
         }
     }
@@ -363,7 +350,7 @@ public class MainActivity extends BaseViewActivity {
                 tv_msgs.setText("0");
                 tv_msgs.setVisibility(View.GONE);
             } else if (count < 100) {
-                tv_msgs.setText(mIMKit.getUnreadCount() + "");
+                tv_msgs.setText(String.valueOf(mIMKit.getUnreadCount()));
                 tv_msgs.setVisibility(View.VISIBLE);
             } else {
                 tv_msgs.setText("99+");
@@ -390,7 +377,7 @@ public class MainActivity extends BaseViewActivity {
                             tv_msgs.setText("0");
                             tv_msgs.setVisibility(View.GONE);
                         } else if (count < 100) {
-                            tv_msgs.setText(mIMKit.getUnreadCount() + "");
+                            tv_msgs.setText(String.valueOf(mIMKit.getUnreadCount()));
                             tv_msgs.setVisibility(View.VISIBLE);
                         } else {
                             tv_msgs.setText("99+");

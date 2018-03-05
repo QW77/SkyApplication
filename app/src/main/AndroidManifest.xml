@@ -149,18 +149,7 @@
             android:name=".ui.activity.search.SearchSecondTwoActivity1234"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.activity.product.ProductDetailActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="chuancheng"
-                    android:host="51gongjiang.app"
-                    android:pathPrefix="/openwith"/>
-            </intent-filter>
-
-
-        </activity>
+        <activity android:name=".ui.activity.product.ProductDetailActivity"/>
         <activity
             android:name=".ui.activity.seller.SellerFirstCategoryActivity"
             android:screenOrientation="portrait"
@@ -224,14 +213,6 @@
             android:name=".ui.activity.shop.CardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="chuancheng"
-                    android:host="51gongjiang.app"
-                    android:pathPrefix="/openwith"/>
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.activity.user.MyCollectActivity"

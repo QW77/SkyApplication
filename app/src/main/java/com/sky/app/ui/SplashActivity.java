@@ -184,9 +184,6 @@ public class SplashActivity extends BaseViewActivity<UpdateContract.IUpdatePrese
     @Override
     public void showError(String error) {
         super.showError(error);
-//        Intent intent = new Intent(context, MainActivity.class);
-//        startActivity(intent);
-
         T.showShort(context, error);
     }
 
