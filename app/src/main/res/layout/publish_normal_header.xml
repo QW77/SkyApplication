@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/publish_normal_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:minHeight="?android:attr/actionBarSize"
+    app:layout_collapseMode="pin"
+    android:theme="@style/Theme.customer.ToolBar"
+    android:background="@color/transport_colorPrimary">
+
+    <TextView
+        android:text="工匠头条"
+        android:id="@+id/publish_title_tou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/sky_font_size_20"
+        android:textColor="@color/sky_color_white"/>
+
+    <!--<Button-->
+    <!--android:id="@+id/publish_collect"-->
+    <!--style="?android:attr/borderlessButtonStyle"-->
+    <!--android:layout_width="@dimen/sky_dp_size_72"-->
+    <!--android:layout_height="@dimen/sky_dp_size_24"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginBottom="@dimen/sky_dp_size_7"-->
+    <!--android:layout_marginRight="@dimen/sky_dp_size_17"-->
+    <!--android:background="@drawable/app_order_selected_shape_selector"-->
+    <!--android:text="收藏店铺"-->
+    <!--android:textColor="@color/sky_color_white"-->
+    <!--android:textSize="@dimen/sky_font_size_14" />-->
+
+
+</android.support.v7.widget.Toolbar>

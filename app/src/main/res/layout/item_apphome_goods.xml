@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/sky_color_white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/goods_picher"
+        android:layout_width="@dimen/sky_dp_size_150"
+        android:layout_height="@dimen/sky_dp_size_150"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="的拉胡德个拉萨的更好了撒过后撒过拉萨和管理挥洒的灵魂嘎说"
+        android:textColor="@color/sky_color_black"
+        android:textSize="@dimen/sky_font_size_14" />
+
+    <TextView
+        android:id="@+id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="¥323532"
+        android:textColor="@color/sky_color_d50d0d"
+        android:textSize="@dimen/sky_font_size_18" />
+
+
+</LinearLayout>

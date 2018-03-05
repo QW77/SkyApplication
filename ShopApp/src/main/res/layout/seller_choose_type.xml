@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_normal_header" />
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/sellChoseTypeCompany">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/app_home_company"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="商户"
+            android:id="@+id/company"
+            android:background="#55000000"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:gravity="center"
+
+
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/sellChoseTypePerson">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/app_home_personal"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="工匠"
+            android:id="@+id/person"
+            android:background="#55000000"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:gravity="center"
+
+
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:layout_gravity="center"
+        android:id="@+id/sellChoseTypeNextButtom"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#00a5ea" />
+
+</LinearLayout>

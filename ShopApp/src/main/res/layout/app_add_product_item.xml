@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/sky_dp_size_5"
+    android:paddingBottom="@dimen/sky_dp_size_5">
+    <EditText
+        android:id="@+id/app_attr_name"
+        android:layout_width="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="属性名称"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:background="@drawable/transport_homepage_grey_shape"
+        android:gravity="start|center_vertical"
+        android:inputType="text"
+        android:textColor="@color/sky_color_aaaaaa"
+        android:textSize="@dimen/sky_font_size_12"
+        android:padding="@dimen/sky_dp_size_5"/>
+
+    <EditText
+        android:id="@+id/app_price"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:hint="价格"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:background="@drawable/transport_homepage_grey_shape"
+        android:gravity="start|center_vertical"
+        android:inputType="numberDecimal"
+        android:textColor="@color/sky_color_aaaaaa"
+        android:textSize="@dimen/sky_font_size_12"
+        android:padding="@dimen/sky_dp_size_5"
+        android:layout_marginLeft="@dimen/sky_dp_size_12"/>
+
+    <EditText
+        android:id="@+id/app_num"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:hint="库存"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:background="@drawable/transport_homepage_grey_shape"
+        android:gravity="start|center_vertical"
+        android:inputType="number"
+        android:textColor="@color/sky_color_aaaaaa"
+        android:textSize="@dimen/sky_font_size_12"
+        android:padding="@dimen/sky_dp_size_5"
+        android:layout_marginLeft="@dimen/sky_dp_size_12"/>
+
+    <TextView
+        android:id="@+id/del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:gravity="center"
+        android:textSize="@dimen/sky_font_size_14"
+        android:drawableLeft="@mipmap/app_product_del_icon"
+        android:drawablePadding="@dimen/sky_dp_size_2"
+        android:textColor="#47c261"
+        android:layout_marginLeft="@dimen/sky_dp_size_10"/>
+</TableRow>

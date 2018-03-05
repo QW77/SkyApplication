@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sky_dp_size_47">
+
+    <TextView
+        android:id="@+id/product_detail_size_name"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:singleLine="true"
+        android:textColor="@color/sky_color_black"
+        android:textSize="@dimen/sky_font_size_16"
+        android:gravity="center"
+        android:paddingTop="@dimen/sky_dp_size_8"
+        android:paddingBottom="@dimen/sky_dp_size_8"
+        android:paddingLeft="@dimen/sky_dp_size_5"
+        android:paddingRight="@dimen/sky_dp_size_5"
+        android:background="@drawable/app_select_pro_category_shape_selector"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/product_detail_size_price"
+        android:layout_width="@dimen/sky_dp_size_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/sky_color_b3b3b3"
+        android:textSize="@dimen/sky_font_size_16"
+        android:layout_gravity="center_vertical"
+        android:text="¥0.00" />
+
+    <TextView
+        android:id="@+id/app_remain"
+        android:layout_weight="1"
+        android:text="库存0件"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@color/sky_color_b3b3b3"
+        android:textSize="@dimen/sky_font_size_16"
+        android:layout_width="@dimen/sky_dp_size_0"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

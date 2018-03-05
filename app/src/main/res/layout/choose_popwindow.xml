@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/bt_walk"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="步行导航"/>
+    <Button
+        android:id="@+id/bt_bike"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="骑行导航"/>
+
+</LinearLayout>

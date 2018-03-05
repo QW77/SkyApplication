@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_framework_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:id="@+id/app_navigarion_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/sky_color_white"
+        android:gravity="center">
+
+        <com.sky.app.library.component.TabRaidoButton
+            android:id="@+id/app_home_page"
+            style="@style/tab_navigation_style"
+            app:image_down="@mipmap/app_home_page_selected_icon"
+            app:image_up="@mipmap/app_home_page_unselected_icon"
+            app:textOne="@string/app_home_page_string" />
+
+        <!--<item name="android:layout_width">0dp</item>-->
+        <!--<item name="android:layout_height">@dimen/sky_dp_size_56</item>-->
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:gravity">center</item>-->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1">
+
+            <com.sky.app.library.component.TabRaidoButton
+                android:id="@+id/app_home_openIM"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                app:image_down="@mipmap/im_tab_selecte"
+                app:image_up="@mipmap/im_tab_unselecte"
+                app:textOne="信息" />
+
+            <TextView
+                android:id="@+id/tv_msgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_im"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:text="0"
+                android:visibility="gone"
+                android:textColor="#fff"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+
+        <com.sky.app.library.component.TabRaidoButton
+            android:id="@+id/app_message"
+            style="@style/tab_navigation_style"
+            android:layout_gravity="center"
+            app:image_down="@mipmap/app_ask_12"
+            app:image_up="@mipmap/app_ask_11"
+            app:textOne="问一问" />
+
+        <com.sky.app.library.component.TabRaidoButton
+            android:id="@+id/app_publish"
+            style="@style/tab_navigation_style"
+            android:layout_gravity="center"
+            app:image_down="@mipmap/app_publish_selected_icon"
+            app:image_up="@mipmap/app_publish_unselected_icon"
+            app:textOne="@string/app_publish_string" />
+
+
+        <com.sky.app.library.component.TabRaidoButton
+            android:id="@+id/app_mine"
+            style="@style/tab_navigation_style"
+            android:layout_gravity="center"
+            app:image_down="@mipmap/app_mine_selected_icon"
+            app:image_up="@mipmap/app_mine_unselected_icon"
+            app:textOne="@string/app_mine_string" />
+
+        <!--<com.sky.app.library.component.TabRaidoButton-->
+            <!--android:id="@+id/app_test"-->
+            <!--style="@style/tab_navigation_style"-->
+            <!--android:layout_gravity="center"-->
+            <!--app:image_down="@mipmap/app_mine_selected_icon"-->
+            <!--app:image_up="@mipmap/app_mine_unselected_icon"-->
+            <!--app:textOne="测试" />-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/driver_content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/app_navigarion_ll" />
+
+    <View
+        style="@style/grey_0_3_horizontal_line"
+        android:layout_above="@id/app_navigarion_ll" />
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_msgs"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:text="0"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textColor="#0f0" />-->
+</RelativeLayout>

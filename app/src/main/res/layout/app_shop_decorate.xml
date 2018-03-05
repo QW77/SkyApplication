@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_color_white">
+
+    <!--搜索栏-->
+    <include layout="@layout/app_search_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_112"
+        android:background="#80000000">
+
+        <ImageView
+            android:id="@+id/shop_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/shop_img"
+            android:layout_width="@dimen/sky_dp_size_45"
+            android:layout_height="@dimen/sky_dp_size_45"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/sky_dp_size_12"/>
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柏木堂"
+            android:textColor="@color/sky_color_white"
+            android:textSize="@dimen/sky_font_size_20"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/shop_img"
+            android:layout_marginLeft="@dimen/sky_dp_size_7"
+            android:layout_marginBottom="@dimen/sky_dp_size_7"/>
+
+        <Button
+            android:id="@+id/shop_collect"
+            android:layout_width="@dimen/sky_dp_size_72"
+            android:layout_height="@dimen/sky_dp_size_24"
+            android:background="@drawable/app_order_selected_shape_selector"
+            android:text="收藏店铺"
+            android:textColor="@color/sky_color_white"
+            android:textSize="@dimen/sky_font_size_14"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/sky_dp_size_17"
+            android:layout_marginBottom="@dimen/sky_dp_size_7"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/app_category_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_50"
+        style="@style/CustomTabLayout"/>
+
+    <View style="@style/grey_horizontal_line"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/app_shop_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_56"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shop_category"
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="商品分类"
+                android:textSize="@dimen/sky_font_size_20"
+                android:textColor="@color/sky_color_black"
+                android:gravity="center"/>
+
+            <View style="@style/grey_0_5_vertical_line"/>
+
+            <TextView
+                android:id="@+id/shop_introduce"
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="店铺简介"
+                android:textSize="@dimen/sky_font_size_20"
+                android:textColor="@color/sky_color_black"
+                android:gravity="center"/>
+
+            <View style="@style/grey_0_5_vertical_line"/>
+
+            <TextView
+                android:id="@+id/shop_contact"
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="联系卖家"
+                android:textSize="@dimen/sky_font_size_20"
+                android:textColor="@color/sky_color_black"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

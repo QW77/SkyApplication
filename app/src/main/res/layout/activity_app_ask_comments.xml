@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sky.app.ui.activity.ask.AskComments">
+
+
+    <include layout="@layout/publish_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/sky_dp_size_12"
+            android:paddingRight="@dimen/sky_dp_size_12">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56sp">
+
+                <com.sky.app.library.component.CircleImageView
+                    android:id="@+id/second_head"
+                    android:layout_width="@dimen/sky_dp_size_30"
+                    android:layout_height="@dimen/sky_dp_size_30"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/app_person_icon"
+                    app:civ_border_color="@color/sky_color_transparent_white"
+                    app:civ_border_width="@dimen/sky_dp_size_0" />
+
+                <TextView
+                    android:id="@+id/second_coment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sky_dp_size_10"
+                    android:layout_toRightOf="@id/second_head"
+                    android:gravity="center"
+                    android:text="的撒了"
+                    android:textColor="@color/sky_color_black"
+                    android:textSize="@dimen/sky_dp_size_16" />
+
+                <TextView
+                    android:id="@+id/ask_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="评论(10)"
+                    android:textSize="@dimen/sky_dp_size_16" />
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line" />
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/ask_coment_swipe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_0"
+                android:layout_weight="1">
+
+                <com.sky.app.library.component.recycler.recyclerview.LuRecyclerView
+                    android:id="@+id/ask_comment_rc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

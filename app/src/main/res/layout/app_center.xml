@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <include layout="@layout/app_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_350"
+        android:layout_marginTop="@dimen/sky_dp_size_5"
+        android:paddingLeft="@dimen/sky_dp_size_12"
+        android:paddingRight="@dimen/sky_dp_size_12"
+        android:orientation="vertical"
+        style="@style/can_click_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/sky_dp_size_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_center_left_font"
+                android:text="头像"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <com.sky.app.library.component.CircleImageView
+                android:id="@+id/driver_center_picture"
+                android:layout_width="@dimen/sky_dp_size_41"
+                android:layout_height="@dimen/sky_dp_size_41"
+                app:civ_border_width="@dimen/sky_dp_size_0"
+                app:civ_border_color="@color/sky_color_transparent_white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_3_horizontal_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/sky_dp_size_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_center_left_font"
+                android:text="昵称"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/driver_center_nick_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="昵称"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                style="@style/app_center_right_font"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_3_horizontal_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/sky_dp_size_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_center_left_font"
+                android:text="真实姓名"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/driver_center_real_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                style="@style/app_center_right_font"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_3_horizontal_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/sky_dp_size_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_center_left_font"
+                android:text="性别"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <!--<EditText-->
+                <!--android:id="@+id/driver_center_sex_et"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="男"-->
+                <!--android:digits="男|女"-->
+                <!--android:singleLine="true"-->
+                <!--android:selectAllOnFocus="true"-->
+                <!--android:background="@null"-->
+                <!--android:gravity="right"-->
+                <!--style="@style/app_center_right_font"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"/>-->
+            <Switch
+                android:id="@+id/driver_center_sex_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sky_font_size_16"
+                android:textColor="@color/sky_color_black"
+                android:showText="true"
+                android:textOff="女"
+                android:textOn="男"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_3_horizontal_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/sky_dp_size_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_center_left_font"
+                android:text="生日"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/driver_center_birthday_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:gravity="right"
+                style="@style/app_center_right_font"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_3_horizontal_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/sky_dp_size_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_center_left_font"
+                android:text="居住地"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/driver_center_addr_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                android:maxLength="15"
+                style="@style/app_center_right_font"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_3_horizontal_line" />
+    </LinearLayout>
+
+</LinearLayout>

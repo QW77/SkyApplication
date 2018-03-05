@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sky_dp_size_112"
+    android:background="@color/sky_color_f2f2f2"
+    android:paddingLeft="@dimen/sky_dp_size_12"
+    android:paddingRight="@dimen/sky_dp_size_17"
+    android:paddingTop="@dimen/sky_dp_size_12"
+    android:paddingBottom="@dimen/sky_dp_size_12">
+
+    <ImageView
+        android:id="@+id/app_img"
+        android:layout_width="@dimen/sky_dp_size_90"
+        android:layout_height="@dimen/sky_dp_size_90"
+        android:scaleType="centerCrop"
+        android:src="@color/main_colorPrimary"/>
+
+    <TextView
+        android:id="@+id/app_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:maxLines="2"
+        android:textColor="@color/sky_color_black"
+        android:textSize="@dimen/sky_font_size_16"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/sky_dp_size_8"
+        android:layout_toRightOf="@id/app_img"/>
+
+    <TextView
+        android:id="@+id/app_attr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sky_font_size_15"
+        android:textColor="@color/sky_color_4d4d4d"
+        android:text="选择分类："
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/sky_dp_size_6"
+        android:layout_marginTop="@dimen/sky_dp_size_5"
+        android:layout_below="@id/app_product_title"
+        android:layout_toRightOf="@id/app_img"/>
+
+    <TextView
+        android:id="@+id/app_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sky_font_size_16"
+        android:textColor="@color/sky_color_d50d0d"
+        android:text="¥214151"
+        android:layout_toRightOf="@id/app_img"
+        android:layout_marginLeft="@dimen/sky_dp_size_8"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/app_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sky_font_size_15"
+        android:textColor="@color/sky_color_4d4d4d"
+        android:text="x1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

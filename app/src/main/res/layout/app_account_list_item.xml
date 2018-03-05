@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sky_dp_size_206"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_40"
+        android:paddingLeft="@dimen/sky_dp_size_12"
+        android:paddingRight="@dimen/sky_dp_size_12">
+
+        <TextView
+            android:id="@+id/app_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="韦小宝"
+            android:textSize="@dimen/sky_font_size_15"
+            android:textColor="@color/sky_color_0d0d0d"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/app_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="韦小宝"
+            android:textSize="@dimen/sky_font_size_15"
+            android:textColor="@color/sky_color_87d395"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/sky_dp_size_12"
+        android:paddingRight="@dimen/sky_dp_size_12">
+
+        <TextView
+            android:id="@+id/app_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="提现类型：银行提现"
+            android:textSize="@dimen/sky_font_size_14"
+            android:textColor="@color/sky_color_333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/app_mode_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="提现方式：招商银行"
+            android:textSize="@dimen/sky_font_size_14"
+            android:textColor="@color/sky_color_333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/app_bank_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="支行名称：南京江宁支行"
+            android:textSize="@dimen/sky_font_size_14"
+            android:textColor="@color/sky_color_333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/app_bank_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="银行账号：3523624262626243626"
+            android:textSize="@dimen/sky_font_size_14"
+            android:textColor="@color/sky_color_333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/app_idcard_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="身份证号：2536364357345743737"
+            android:textSize="@dimen/sky_font_size_14"
+            android:textColor="@color/sky_color_333333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:id="@+id/app_tmp_1_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_44"
+            android:paddingLeft="@dimen/sky_dp_size_12"
+            android:paddingRight="@dimen/sky_dp_size_12">
+
+            <TextView
+                android:id="@+id/app_remark_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注：搭嘎嘎"
+                android:textSize="@dimen/sky_font_size_15"
+                android:textColor="@color/sky_color_26aceb"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/app_del_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textSize="@dimen/sky_font_size_15"
+                android:textColor="@color/sky_color_edb01f"
+                android:drawableLeft="@mipmap/app_account_del_icon"
+                android:drawablePadding="@dimen/sky_dp_size_6"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

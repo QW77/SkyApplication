@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sky_dp_size_14">
+
+        <com.sky.app.library.component.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/sky_dp_size_25"
+            android:layout_height="@dimen/sky_dp_size_25"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/app_person_icon"
+            app:civ_border_color="@color/sky_color_transparent_white"
+            app:civ_border_width="@dimen/sky_dp_size_0" />
+
+        <TextView
+            android:id="@+id/my_ask_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/imageView"
+            android:gravity="center"
+            android:text="的撒了"
+            android:textColor="@color/sky_color_black"
+            android:textSize="@dimen/sky_dp_size_14" />
+
+
+        <TextView
+            android:id="@+id/my_ask_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="2017-12-08 12:34:34"
+            android:textColor="@color/sky_color_a9a9a9"
+            android:textSize="@dimen/sky_dp_size_13" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/my_ask_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/sky_dp_size_12"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="3"
+        android:paddingBottom="@dimen/sky_dp_size_3"
+        android:paddingTop="@dimen/sky_dp_size_1"
+        android:text="大山里哈梨花大鼓好大好噶好时光大葫芦岛市嘎说的感觉啊说；噶；的感觉搭嘎说的故事嘎说大哥adsga大功率登录嘎家啊时间过的撒几个"
+        android:textColor="@color/sky_color_808080"
+        android:textSize="@dimen/sky_dp_size_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:src="@mipmap/app_ask_6" />
+
+        <TextView
+            android:id="@+id/my_ask_prise"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:gravity="center_vertical"
+            android:text="5"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

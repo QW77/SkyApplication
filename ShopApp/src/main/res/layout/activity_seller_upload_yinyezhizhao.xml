@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_seller_upload_sheng_fen_zhen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+>
+    <include layout="@layout/app_normal_header"/>
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="上传营业执照"
+              android:paddingTop="60dp"
+              android:paddingLeft="65dp"
+              android:textSize="15sp"
+              android:textColor="#4e91c6"
+              android:id="@+id/textView"/>
+
+
+    <FrameLayout android:layout_width="250dp"
+                 android:layout_gravity="center" android:layout_height="150dp"
+                 android:layout_marginTop="15dp"
+                 android:id="@+id/sell_upload_zhengmian"
+    >
+
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                   android:background="#ffffff"
+                   android:id="@+id/sell_upload_yingye_pic"
+                   android:scaleType="centerCrop"
+        />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="上传"
+                  android:layout_gravity="center"
+                  android:background="@drawable/textview_big_corner"
+                  android:textColor="#00a5ea"
+                  android:textSize="15sp"
+                  android:padding="10dp"
+                  android:gravity="center"
+        />
+
+
+    </FrameLayout>
+    <FrameLayout android:layout_width="250dp"
+                 android:visibility="invisible"
+                 android:layout_gravity="center" android:layout_height="150dp"
+                 android:layout_marginTop="15dp"
+                 android:id="@+id/sell_upload_fanmian"
+    >
+
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                   android:background="#ffffff"
+                   android:id="@+id/sell_upload_fanmian_pic"
+                   android:scaleType="centerCrop"
+        />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="反面上传"
+                  android:layout_gravity="center"
+                  android:background="@drawable/textview_big_corner"
+                  android:textColor="#00a5ea"
+                  android:textSize="15sp"
+                  android:padding="10dp"
+                  android:gravity="center"
+        />
+
+
+    </FrameLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="提交"
+              android:layout_gravity="center"
+              android:id="@+id/sell_upload_next_buttom"
+              android:layout_marginTop="50dp"
+              android:paddingLeft="50dp"
+              android:paddingRight="50dp"
+              android:textColor="#ffffff"
+              android:textSize="18sp"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:background="#00a5ea"
+    />
+
+
+
+</LinearLayout>

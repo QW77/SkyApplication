@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.sky.app.library.component.CustomImageView
+        android:id="@+id/app_type_img"
+        app:circle="false"
+        app:radius="@dimen/sky_dp_size_5"
+        android:layout_height="@dimen/sky_dp_size_62"
+        android:layout_width="@dimen/sky_dp_size_62"
+        android:src="@mipmap/category_default_icon"/>
+
+    <TextView
+        android:id="@+id/app_type_txt"
+        android:layout_marginTop="@dimen/sky_dp_size_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sky_color_333333"
+        android:textSize="@dimen/sky_dp_size_14"/>
+</LinearLayout>

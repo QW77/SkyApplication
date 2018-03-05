@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <include layout="@layout/app_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_78"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="押金金额"
+                    style="@style/app_account_top_font"/>
+
+                <TextView
+                    android:id="@+id/ensure_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥0.00"
+                    style="@style/app_account_bottom_font"
+                    android:layout_marginTop="@dimen/sky_dp_size_8"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冻结资金"
+                    style="@style/app_account_top_font"/>
+
+                <TextView
+                    android:id="@+id/frozen_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥0.00"
+                    style="@style/app_account_bottom_font"
+                    android:layout_marginTop="@dimen/sky_dp_size_8"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用资金"
+                    style="@style/app_account_top_font"/>
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥0.00"
+                    style="@style/app_account_bottom_font"
+                    android:layout_marginTop="@dimen/sky_dp_size_8"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_12"
+            android:background="@color/sky_color_f2f2f2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/sky_color_white">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/driver_account_title_tl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_48"
+                style="@style/CustomAccountTabLayout"/>
+
+            <View style="@style/grey_horizontal_line"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/driver_account_list_vp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

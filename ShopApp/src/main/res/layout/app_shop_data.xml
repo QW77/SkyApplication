@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <include layout="@layout/app_normal_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/sky_dp_size_12"
+            android:paddingRight="@dimen/sky_dp_size_12">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="商家图片"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <ImageView
+                    android:id="@+id/app_icon"
+                    android:layout_width="@dimen/sky_dp_size_42"
+                    android:layout_height="@dimen/sky_dp_size_42"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/app_default_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="登录账号"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <TextView
+                    android:id="@+id/login_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="商户名称"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <EditText
+                    android:id="@+id/seller_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="所属区域"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <TextView
+                    android:id="@+id/area_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/app_right_arrow_icon"
+                    android:drawablePadding="@dimen/sky_dp_size_5"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="地址"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <EditText
+                    android:id="@+id/area_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="所在装饰城"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <TextView
+                    android:id="@+id/decorate_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/app_right_arrow_icon"
+                    android:drawablePadding="@dimen/sky_dp_size_5"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="厂家类型"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <TextView
+                    android:id="@+id/company_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/app_right_arrow_icon"
+                    android:drawablePadding="@dimen/sky_dp_size_5"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号码"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:maxLength="11"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="邮箱"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="QQ"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <EditText
+                    android:id="@+id/qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="微信"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <EditText
+                    android:id="@+id/weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="主营描述"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <EditText
+                    android:id="@+id/main_yinye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="@dimen/sky_dp_size_6"
+                android:paddingRight="@dimen/sky_dp_size_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="从业时间"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:textColor="@color/sky_color_333333"/>
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="未设置"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColorHint="@color/sky_color_e4e4e4"
+                    android:textColor="@color/sky_color_666666"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

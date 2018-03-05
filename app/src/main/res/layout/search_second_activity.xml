@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--搜索栏-->
+    <include layout="@layout/app_search_header" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/sky_dp_size_1"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/sky_color_f2f2f2" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listview_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            app:ptrMode="both">
+
+            <com.sky.app.ui.custom.AutoHeightListView
+                android:id="@+id/listview_right"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+        </com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

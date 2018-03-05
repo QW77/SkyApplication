@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_color_white">
+
+    <include layout="@layout/app_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/sky_dp_size_12"
+            android:paddingRight="@dimen/sky_dp_size_12">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_52">
+
+                <RadioGroup
+                    android:id="@+id/comment_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="left|center_vertical">
+
+                    <RadioButton
+                        android:id="@+id/all"
+                        android:layout_width="@dimen/sky_dp_size_86"
+                        android:layout_height="@dimen/sky_dp_size_30"
+                        android:background="@drawable/app_btn1_shape_selector"
+                        android:text="全部(0)"
+                        android:textSize="@dimen/sky_font_size_12"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:textColor="@color/app_btn1_color_shape_selector"
+                        android:layout_gravity="center_vertical"/>
+
+                    <RadioButton
+                        android:id="@+id/has_pic"
+                        android:layout_width="@dimen/sky_dp_size_86"
+                        android:layout_height="@dimen/sky_dp_size_30"
+                        android:background="@drawable/app_btn1_shape_selector"
+                        android:text="有图(0)"
+                        android:textSize="@dimen/sky_font_size_12"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:layout_marginLeft="@dimen/sky_dp_size_12"
+                        android:textColor="@color/app_btn1_color_shape_selector"
+                        android:layout_gravity="center_vertical"/>
+
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/publish_comment"
+                    android:layout_width="@dimen/sky_dp_size_32"
+                    android:layout_height="@dimen/sky_dp_size_32"
+                    android:src="@mipmap/app_publish_comment_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"/>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/app_swipe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_0"
+                android:layout_weight="1">
+
+                <com.sky.app.library.component.recycler.recyclerview.LuRecyclerView
+                    android:id="@+id/app_comment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

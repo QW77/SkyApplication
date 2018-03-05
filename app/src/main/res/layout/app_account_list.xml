@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_f2f2f2">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/app_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/account_bank_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/add_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_56"
+        android:text="增加提现账户"
+        android:textColor="@color/sky_color_white"
+        android:background="@color/sky_color_00a5ea"
+        android:textSize="@dimen/sky_font_size_18"
+        android:gravity="center"/>
+
+</LinearLayout>

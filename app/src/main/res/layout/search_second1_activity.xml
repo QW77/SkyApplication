@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--搜索栏-->
+    <include layout="@layout/app_search_header"/>
+
+    <com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView
+        app:ptrMode="both"
+        android:layout_width="match_parent"
+        android:id="@+id/scrollview"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/sky_color_white"
+                android:columnWidth="55dp"
+                android:gravity="center"
+                android:numColumns="5"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <ListView android:layout_width="match_parent"
+                android:id="@+id/listview"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_normal_header" />
+
+    <FrameLayout
+        android:id="@+id/sellChoseTypeCompany"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/app_home_header_03_icon" />
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:gravity="center"
+            android:text="公司"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+
+
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sellChoseTypePerson"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/app_home_header_03_icon" />
+
+        <TextView
+            android:id="@+id/person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:gravity="center"
+            android:text="个人"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+
+
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/sellChoseTypeNextButtom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#00a5ea"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

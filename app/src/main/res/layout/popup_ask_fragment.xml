@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_ask_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/app_ask_3"
+        android:textSize="18sp"
+        android:text="  我的提问"/>
+    <TextView
+        android:id="@+id/tv_ask_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/app_ask_4"
+        android:textSize="18sp"
+        android:text="  我的回答"/>
+
+</LinearLayout>

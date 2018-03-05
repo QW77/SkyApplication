@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <LinearLayout
+        android:id="@+id/driver_home_page_tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_39"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.sky.shop.custom.DropdownButton
+            android:id="@+id/driver_status_sort_btn"
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View style="@style/grey_0_5_vertical_line"
+            android:layout_marginTop="@dimen/sky_dp_size_8"
+            android:layout_marginBottom="@dimen/sky_dp_size_8"/>
+
+        <com.sky.shop.custom.DropdownButton
+            android:id="@+id/driver_date_sort_btn"
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <View style="@style/grey_0_5_horizontal_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky_color_white">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/driver_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.sky.app.library.component.recycler.recyclerview.LuRecyclerView
+                android:id="@+id/account_query"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <View
+            android:id="@+id/driver_bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sky_color_80000000" />
+
+        <ListView
+            android:id="@+id/driver_list_sort_dv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/sky_color_e4e4e4"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:background="@color/sky_color_white"/>
+
+    </FrameLayout>
+
+</LinearLayout>

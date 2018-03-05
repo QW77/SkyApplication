@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_f2f2f2">
+
+    <include layout="@layout/app_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/sky_dp_size_12"
+        android:paddingRight="@dimen/sky_dp_size_12"
+        android:orientation="vertical"
+        android:background="@color/sky_color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号绑定"
+            android:textSize="@dimen/sky_font_size_13"
+            android:textColor="@color/sky_color_666666"
+            android:layout_marginTop="@dimen/sky_dp_size_22"
+            android:layout_marginLeft="@dimen/sky_dp_size_11"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_164"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/sky_dp_size_10"
+                android:paddingRight="@dimen/sky_dp_size_10">
+
+                <ImageView
+                    android:id="@+id/app_tmp_3_iv"
+                    android:layout_width="@dimen/sky_dp_size_13"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/app_person_mobile_icon"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_333333"
+                    android:textSize="@dimen/sky_font_size_17"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/app_tmp_3_iv"
+                    android:text="手机"
+                    android:layout_marginLeft="@dimen/sky_dp_size_10"/>
+
+                <TextView
+                    android:id="@+id/app_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sky_font_size_14"
+                    android:textColor="@color/sky_color_7fd1a4"
+                    android:layout_alignParentRight="true"
+                    android:text="未绑定"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View style="@style/grey_0_3_horizontal_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/sky_dp_size_10"
+                android:paddingRight="@dimen/sky_dp_size_10">
+
+                <ImageView
+                    android:id="@+id/app_tmp_4_iv"
+                    android:layout_width="@dimen/sky_dp_size_17"
+                    android:layout_height="@dimen/sky_dp_size_17"
+                    android:src="@mipmap/app_person_weixin_icon"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_333333"
+                    android:textSize="@dimen/sky_font_size_17"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/app_tmp_4_iv"
+                    android:text="微信"
+                    android:layout_marginLeft="@dimen/sky_dp_size_9"/>
+
+                <TextView
+                    android:id="@+id/app_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未绑定"
+                    android:textSize="@dimen/sky_font_size_14"
+                    android:textColor="@color/sky_color_7fd1a4"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View style="@style/grey_0_3_horizontal_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/sky_dp_size_10"
+                android:paddingRight="@dimen/sky_dp_size_10">
+
+                <ImageView
+                    android:id="@+id/app_tmp_5_iv"
+                    android:layout_width="@dimen/sky_dp_size_17"
+                    android:layout_height="@dimen/sky_dp_size_17"
+                    android:src="@mipmap/app_person_qq_icon"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sky_color_333333"
+                    android:textSize="@dimen/sky_font_size_17"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/app_tmp_5_iv"
+                    android:text="QQ"
+                    android:layout_marginLeft="@dimen/sky_dp_size_9"/>
+
+                <TextView
+                    android:id="@+id/app_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未绑定"
+                    android:textSize="@dimen/sky_font_size_14"
+                    android:textColor="@color/sky_color_7fd1a4"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_84"
+        android:paddingLeft="@dimen/sky_dp_size_12"
+        android:paddingRight="@dimen/sky_dp_size_12"
+        android:orientation="vertical"
+        android:background="@color/sky_color_white"
+        android:layout_marginTop="@dimen/sky_dp_size_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全设置"
+            android:textSize="@dimen/sky_font_size_13"
+            android:textColor="@color/sky_color_666666"
+            android:layout_marginTop="@dimen/sky_dp_size_22"
+            android:layout_marginLeft="@dimen/sky_dp_size_11"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/sky_dp_size_10"
+            android:paddingRight="@dimen/sky_dp_size_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sky_color_333333"
+                android:textSize="@dimen/sky_font_size_17"
+                android:layout_centerVertical="true"
+                android:text="登录密码"/>
+
+            <TextView
+                android:id="@+id/app_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="******"
+                android:textSize="@dimen/sky_font_size_14"
+                android:textColor="@color/sky_color_7fd1a4"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/app_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sky_dp_size_20"
+        android:layout_marginRight="@dimen/sky_dp_size_20"
+        android:layout_marginTop="@dimen/sky_dp_size_20"
+        android:text="退出账号"
+        android:textColor="@color/main_colorPrimary"
+        android:textSize="@dimen/sky_font_size_18"
+        android:gravity="center"
+        android:background="@drawable/app_normal_grey_selector"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Copyright @2017-****\n南京易材网络科技有限公司"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/sky_dp_size_3"
+        android:textColor="@color/sky_color_cccccc"
+        android:textSize="@dimen/sky_font_size_14"
+        android:gravity="center"/>
+</LinearLayout>

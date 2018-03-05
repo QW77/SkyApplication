@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--搜索栏-->
+    <include layout="@layout/app_search_header"/>
+
+    <com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView
+        app:ptrMode="both"
+        android:layout_width="match_parent"
+        android:id="@+id/scrollview"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.sky.app.ui.custom.AutoHeightViewPager
+                    android:id="@+id/second_category_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!--<LinearLayout android:layout_width="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:id="@+id/dot_container"-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_height="20dp"/>-->
+
+            </LinearLayout>
+
+            <com.sky.app.ui.custom.AutoHeightListView
+                android:layout_width="match_parent"
+                android:id="@+id/listview"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView>
+</LinearLayout>

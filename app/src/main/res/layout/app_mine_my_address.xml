@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_f2f2f2">
+
+    <include layout="@layout/app_normal_header" />
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/app_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/app_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_56"
+        android:text="添加新地址"
+        android:textSize="@dimen/sky_font_size_16"
+        android:textColor="@color/sky_color_white"
+        android:gravity="center"
+        android:background="@color/main_colorPrimary"/>
+</LinearLayout>

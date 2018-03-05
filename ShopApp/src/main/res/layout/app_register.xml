@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <include layout="@layout/app_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_100">
+
+            <ImageView
+                android:layout_width="@dimen/sky_dp_size_70"
+                android:layout_height="@dimen/sky_dp_size_70"
+                android:src="@mipmap/app_logo_icon"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/sky_dp_size_12"
+            android:paddingLeft="@dimen/sky_dp_size_20"
+            android:paddingRight="@dimen/sky_dp_size_20">
+
+            <LinearLayout
+                android:id="@+id/sky_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_45"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_23"
+                    android:src="@mipmap/app_mobile_icon"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/driver_mobile_et"
+                    android:layout_width="@dimen/sky_dp_size_0"
+                    android:layout_height="@dimen/sky_dp_size_28"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/sky_dp_size_16"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:hint="手机号"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    android:textColor="@color/sky_color_666666"
+                    android:textColorHint="@color/sky_color_cccccc"
+                    android:textSize="@dimen/sky_font_size_14"/>
+
+            </LinearLayout>
+
+            <View style="@style/login_grey_horizontal_line" />
+
+            <LinearLayout
+                android:id="@+id/sky_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_40"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/sky_dp_size_15">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_23"
+                    android:src="@mipmap/app_pwd_icon"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/driver_pwd_et"
+                    android:layout_width="@dimen/sky_dp_size_0"
+                    android:layout_height="@dimen/sky_dp_size_28"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/sky_dp_size_16"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:hint="密码"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:textColor="@color/sky_color_666666"
+                    android:textColorHint="@color/sky_color_cccccc"
+                    android:textSize="@dimen/sky_font_size_14" />
+
+            </LinearLayout>
+
+            <View style="@style/login_grey_horizontal_line" />
+
+            <LinearLayout
+                android:id="@+id/sky_code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_40"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/sky_dp_size_15">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/sky_dp_size_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/driver_tmp_6_iv"
+                        android:layout_width="@dimen/sky_dp_size_18"
+                        android:layout_height="@dimen/sky_dp_size_23"
+                        android:src="@mipmap/app_code_icon"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/driver_code_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sky_dp_size_28"
+                        android:layout_marginLeft="@dimen/sky_dp_size_16"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="bottom"
+                        android:hint="验证码"
+                        android:maxLines="1"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:textColor="@color/sky_color_666666"
+                        android:textColorHint="@color/sky_color_cccccc"
+                        android:textSize="@dimen/sky_font_size_14"
+                        android:layout_toRightOf="@id/driver_tmp_6_iv"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sky_dp_size_1"
+                        android:background="@color/sky_color_b3b3b3"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/driver_send_code_bn"
+                    android:layout_width="@dimen/sky_dp_size_128"
+                    android:layout_height="@dimen/sky_dp_size_37"
+                    android:background="@drawable/app_send_code_shape_selector"
+                    android:text="@string/app_code_string"
+                    android:textSize="@dimen/sky_font_size_14"
+                    android:textColor="@color/sky_color_00a5ea"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/sky_dp_size_17"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/driver_register_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_45"
+                android:text="注册"
+                android:textSize="@dimen/sky_font_size_17"
+                android:textColor="@color/sky_color_white"
+                android:background="@color/sky_color_00a5ea"
+                android:layout_marginTop="@dimen/sky_dp_size_49"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

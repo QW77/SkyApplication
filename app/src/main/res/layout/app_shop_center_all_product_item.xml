@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/sky_dp_size_13"
+    android:background="@color/sky_color_white">
+
+    <ImageView
+        android:id="@+id/app_image"
+        android:layout_width="@dimen/sky_dp_size_150"
+        android:layout_height="@dimen/sky_dp_size_150"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sky_dp_size_3">
+
+        <TextView
+            android:id="@+id/app_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_d50d0d"
+            android:textSize="@dimen/sky_font_size_18"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="¥323532"/>
+
+        <TextView
+            android:id="@+id/app_buy_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_b8b8b8"
+            android:textSize="@dimen/sky_font_size_13"
+            android:text="3人付款"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/app_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sky_color_black"
+        android:textSize="@dimen/sky_font_size_14"
+        android:maxLines="2"
+        android:text="的拉胡德个拉萨的更好了撒过后撒过拉萨和管理挥洒的灵魂嘎说"/>
+
+</LinearLayout>

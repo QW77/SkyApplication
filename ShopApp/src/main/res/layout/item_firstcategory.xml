@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:id="@+id/one_ll"
+                  android:orientation="vertical"
+                  android:gravity="center_horizontal"
+                  android:layout_height="wrap_content">
+        <!--<ImageView android:layout_width="63dp"-->
+                   <!--android:layout_height="62dp"-->
+                   <!--tools:src="@mipmap/btn_1"-->
+                   <!--android:id="@+id/pic_1"-->
+        <!--/>-->
+
+        <!--<TextView android:layout_width="wrap_content"-->
+                  <!--android:layout_height="wrap_content"-->
+                  <!--android:layout_marginTop="10dp"-->
+                  <!--android:id="@+id/category_name1"-->
+                  <!--tools:text="家具"-->
+        <!--/>-->
+        <TextView android:layout_width="62dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/category_name1"
+            android:paddingLeft="@dimen/sky_dp_size_5"
+            android:paddingRight="@dimen/sky_dp_size_5"
+            android:gravity="center"
+            android:ems="4"
+            tools:text="家具"
+            android:background="@mipmap/search_bg" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white"
+    android:paddingLeft="@dimen/sky_dp_size_15"
+    android:paddingRight="@dimen/sky_dp_size_15">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_42">
+
+        <TextView
+            android:id="@+id/app_order_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="提现单号：2893774"
+            android:textColor="@color/sky_color_4d4d4d"
+            android:textSize="@dimen/sky_font_size_12"/>
+
+        <TextView
+            android:id="@+id/app_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="2016-12-12 12:12:12"
+            android:textColor="@color/sky_color_4d4d4d"
+            android:textSize="@dimen/sky_font_size_12"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/app_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="韦小宝"
+            android:textColor="@color/sky_color_484848"
+            android:textSize="@dimen/sky_font_size_15"/>
+
+        <TextView
+            android:id="@+id/app_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="交易成功"
+            android:textColor="@color/sky_color_59c66f"
+            android:textSize="@dimen/sky_font_size_15"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_106"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/sky_dp_size_10"
+        android:paddingBottom="@dimen/sky_dp_size_10">
+
+        <TextView
+            android:id="@+id/app_with_money"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="提现金额：252352352"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_12"
+            android:textColor="@color/sky_color_4d4d4d"/>
+
+        <TextView
+            android:id="@+id/app_poundage_money"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="手续费：252352352"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_12"
+            android:textColor="@color/sky_color_4d4d4d"/>
+
+        <TextView
+            android:id="@+id/app_actual_money"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="到账金额：252352352"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_12"
+            android:textColor="@color/sky_color_4d4d4d"/>
+
+        <TextView
+            android:id="@+id/app_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:text="银行名称：252352352"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_12"
+            android:textColor="@color/sky_color_4d4d4d"/>
+
+    </LinearLayout>
+
+</LinearLayout>

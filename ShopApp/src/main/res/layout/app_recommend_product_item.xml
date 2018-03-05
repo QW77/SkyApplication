@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/sky_color_white"
+    android:padding="@dimen/sky_dp_size_5">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sky_dp_size_3"
+        android:layout_centerInParent="true"
+        android:background="@drawable/app_image_shape">
+
+        <ImageView
+            android:id="@+id/app_image"
+            android:layout_width="@dimen/sky_dp_size_52"
+            android:layout_height="@dimen/sky_dp_size_52"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

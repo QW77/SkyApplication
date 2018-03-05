@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/driver_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky_color_transparent_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/sky_dp_size_10">
+
+        <Button
+            android:id="@+id/driver_take_photo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_48"
+            android:text="拍照"
+            android:textColor="@color/driver_colorPrimary"
+            android:textSize="@dimen/sky_font_size_18"
+            android:background="@drawable/driver_photo_cam_selector"
+            android:gravity="center"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <View style="@style/black_0_5_horizontal_line" />
+
+        <Button
+            android:id="@+id/driver_pick_photo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_48"
+            android:text="从相册选择"
+            android:textColor="@color/driver_colorPrimary"
+            android:textSize="@dimen/sky_font_size_18"
+            android:background="@drawable/driver_photo_file_selector"
+            android:gravity="center"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/driver_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_48"
+            android:text="取 消"
+            android:gravity="center"
+            android:textColor="@color/driver_colorPrimary"
+            android:textSize="@dimen/sky_font_size_18"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/driver_photo_cancel_selector"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/sky_dp_size_10"/>
+
+    </LinearLayout>
+
+</LinearLayout>

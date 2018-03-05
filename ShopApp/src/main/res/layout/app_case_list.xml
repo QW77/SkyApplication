@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_color_white">
+
+    <!--搜索栏-->
+    <include layout="@layout/app_normal_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="案例展示"
+            android:textColor="@color/sky_color_333333"
+            android:textSize="@dimen/sky_font_size_18"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/sky_dp_size_17"/>
+
+        <TextView
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="上传"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_14"
+            android:textColor="@color/sky_color_26aceb"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/sky_dp_size_17"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/app_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/case_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:horizontalSpacing="@dimen/sky_dp_size_25"
+            android:verticalSpacing="@dimen/sky_dp_size_8"
+            android:scrollbars="none"
+            android:gravity="center"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:background="@color/sky_color_white"
+            android:paddingLeft="@dimen/sky_dp_size_17"
+            android:paddingRight="@dimen/sky_dp_size_17"
+            android:layout_centerVertical="true"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

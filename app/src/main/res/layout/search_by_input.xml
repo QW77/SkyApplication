@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--搜索栏-->
+    <include layout="@layout/app_search_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_50"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.sky.app.ui.custom.DropdownButton
+            android:id="@+id/app_default_sort_btn"
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.sky.app.ui.custom.DropdownButton
+            android:id="@+id/app_distance_sort_btn"
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.sky.app.ui.custom.DropdownButton
+            android:id="@+id/app_filter_btn"
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View style="@style/grey_0_5_horizontal_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky_color_white">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/app_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sky_color_f2f2f2">
+
+            <com.sky.app.library.component.recycler.recyclerview.LuRecyclerView
+                android:id="@+id/app_order_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <View
+            android:id="@+id/app_bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sky_color_80000000" />
+
+        <ListView
+            android:id="@+id/app_list_sort_dv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/sky_color_e4e4e4"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:background="@color/sky_color_white"/>
+
+        <RelativeLayout
+            android:id="@+id/app_filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_191"
+            android:background="@color/sky_color_white"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/sky_dp_size_27"
+                android:paddingTop="@dimen/sky_dp_size_33">
+
+                <TextView
+                    android:id="@+id/app_tmp_1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格区间"
+                    android:textColor="@color/sky_color_333333"
+                    android:textSize="@dimen/sky_font_size_16"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/app_tmp_1_tv"
+                    android:layout_marginTop="@dimen/sky_dp_size_13"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/app_price_begin_et"
+                        android:layout_width="@dimen/sky_dp_size_111"
+                        android:layout_height="@dimen/sky_dp_size_28"
+                        android:singleLine="true"
+                        android:selectAllOnFocus="true"
+                        android:inputType="number"
+                        android:background="@drawable/app_grey_shape"
+                        android:textColor="@color/sky_color_333333"
+                        android:textSize="@dimen/sky_font_size_15"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="～"
+                        android:textColor="@color/sky_color_999999"
+                        android:textSize="@dimen/sky_font_size_20"
+                        android:layout_marginLeft="@dimen/sky_dp_size_18"/>
+
+                    <EditText
+                        android:id="@+id/app_price_end_et"
+                        android:layout_width="@dimen/sky_dp_size_111"
+                        android:layout_height="@dimen/sky_dp_size_28"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:background="@drawable/app_grey_shape"
+                        android:textColor="@color/sky_color_333333"
+                        android:textSize="@dimen/sky_font_size_15"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/sky_dp_size_18"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/app_tmp_1_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_42"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/app_reset_tv"
+                    android:layout_width="@dimen/sky_dp_size_0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="重置"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:gravity="center"
+                    android:textColor="@color/driver_colorPrimary"
+                    android:background="@color/sky_color_white"/>
+
+                <View style="@style/grey_0_5_vertical_line"/>
+
+                <TextView
+                    android:id="@+id/app_comfirm_tv"
+                    android:layout_width="@dimen/sky_dp_size_0"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="确认"
+                    android:textSize="@dimen/sky_font_size_15"
+                    android:gravity="center"
+                    android:textColor="@color/sky_color_white"
+                    android:background="@color/main_colorPrimary"/>
+
+            </LinearLayout>
+
+            <View style="@style/grey_0_5_horizontal_line"
+                android:layout_above="@id/app_tmp_1_ll"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

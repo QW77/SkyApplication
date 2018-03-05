@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/sky_dp_size_12"
+        android:paddingRight="@dimen/sky_dp_size_12"
+        style="@style/can_click_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="账户ID"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="wwqrq"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="账户可用余额"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0元"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="提现银行"/>
+
+            <EditText
+                android:id="@+id/app_bank_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="text"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="姓名"/>
+
+            <EditText
+                android:id="@+id/app_real_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:inputType="text"
+                android:gravity="right"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="卡号"/>
+
+            <EditText
+                android:id="@+id/app_card_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="number"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="提现金额"/>
+
+            <EditText
+                android:id="@+id/app_apply_money_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="number"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="确认提现金额"/>
+
+            <EditText
+                android:id="@+id/app_confirm_apply_money_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="number"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="手续费"/>
+
+            <EditText
+                android:id="@+id/app_extra_money_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="number"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="到账金额"/>
+
+            <EditText
+                android:id="@+id/app_real_money_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="number"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/grey_0_5_horizontal_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/app_apply_account_left_font"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="备注"/>
+
+            <EditText
+                android:id="@+id/app_remark_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="未设置"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="text"
+                style="@style/app_apply_account_right_font"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_confirm_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_56"
+        android:text="确定"
+        android:textColor="@color/sky_color_white"
+        android:background="@color/sky_color_00a5ea"
+        android:textSize="@dimen/sky_font_size_18"
+        android:gravity="center"/>
+
+</LinearLayout>

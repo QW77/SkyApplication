@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/sky_dp_size_12"
+    android:paddingRight="@dimen/sky_dp_size_10"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sky_dp_size_14">
+
+        <com.sky.app.library.component.CircleImageView
+            android:id="@+id/ask_iv_head"
+            android:layout_width="@dimen/sky_dp_size_22"
+            android:layout_height="@dimen/sky_dp_size_22"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/app_person_icon"
+            app:civ_border_color="@color/sky_color_transparent_white"
+            app:civ_border_width="@dimen/sky_dp_size_0" />
+
+        <TextView
+            android:id="@+id/ask_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sky_dp_size_6"
+            android:layout_toRightOf="@id/ask_iv_head"
+            android:gravity="center"
+            android:text="的撒了"
+            android:textColor="@color/sky_color_black"
+            android:textSize="@dimen/sky_dp_size_14" />
+
+
+        <TextView
+            android:id="@+id/ask_tv_data_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="2017-12-08 12:34:34"
+            android:textColor="@color/sky_color_a9a9a9"
+            android:textSize="@dimen/sky_dp_size_13" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/adk_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/sky_dp_size_12"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="3"
+        android:paddingBottom="@dimen/sky_dp_size_3"
+        android:paddingTop="@dimen/sky_dp_size_3"
+        android:text="大山里哈梨花大鼓好大好噶好时光大葫芦岛市嘎说的感觉啊说；噶；的感觉搭嘎说的故事嘎说大哥adsga大功率登录嘎家啊时间过的撒几个"
+        android:textColor="@color/sky_color_808080"
+        android:textSize="@dimen/sky_dp_size_15" />
+
+    <HorizontalScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/sky_dp_size_9"
+        android:paddingRight="@dimen/sky_dp_size_9"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ask_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6" />
+
+        <ImageView
+            android:id="@+id/ask_tv_comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/app_8"
+            android:textColor="@color/sky_color_808080"
+            />
+
+        <TextView
+            android:id="@+id/ask_coment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="  5"
+            android:textColor="@color/sky_color_808080"
+            android:textSize="@dimen/sky_font_size_16" />
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/ask_tv_praise"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/app_7"
+            android:textColor="@color/sky_color_808080" />
+
+        <TextView
+            android:id="@+id/ask_praise_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="  5"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/sky_color_808080"
+            android:textSize="@dimen/sky_font_size_16" />
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        style="@style/grey_0_5_horizontal_line" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/ask_tv_reply"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawableLeft="@mipmap/app_ask_7"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="45dp" />-->
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 点击背景 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/sky_color_cccccc"/>
+        </shape>
+    </item>
+
+    <!-- 默认背景 -->
+    <item android:drawable="@drawable/app_send_code_shape"/>
+
+</selector>

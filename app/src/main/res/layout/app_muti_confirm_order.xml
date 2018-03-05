@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <include layout="@layout/app_normal_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/app_default_addr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_112"
+                android:padding="@dimen/sky_dp_size_17">
+
+                <ImageView
+                    android:id="@+id/app_tmp_1_iv"
+                    android:layout_width="@dimen/sky_dp_size_17"
+                    android:layout_height="@dimen/sky_dp_size_20"
+                    android:src="@mipmap/app_default_position_icon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/app_tmp_1_iv"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/sky_dp_size_17"
+                    android:paddingRight="@dimen/sky_dp_size_25">
+
+                    <TextView
+                        android:id="@+id/app_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/sky_font_size_16"
+                        android:textColor="@color/sky_color_black"/>
+
+                    <TextView
+                        android:id="@+id/app_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/sky_font_size_16"
+                        android:textColor="@color/sky_color_black"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/app_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/app_tmp_1_iv"
+                    android:layout_centerVertical="true"
+                    android:gravity="start|center_vertical"
+                    android:textSize="@dimen/sky_font_size_14"
+                    android:textColor="@color/sky_color_black"
+                    android:singleLine="true"
+                    android:layout_marginLeft="@dimen/sky_dp_size_17"
+                    android:layout_marginRight="@dimen/sky_dp_size_25"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(此为默认收货地址，可点击修改)"
+                    android:textSize="@dimen/sky_font_size_12"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@+id/app_tmp_1_iv"
+                    android:layout_marginLeft="@dimen/sky_dp_size_17"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/sky_color_79cf89"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/app_right_arrow_black_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_12"
+                android:background="@color/sky_color_f2f2f2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/app_sell_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sky_dp_size_45"
+                    android:text="商品列表"
+                    android:textColor="@color/sky_color_black"
+                    android:textSize="@dimen/sky_font_size_16"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/sky_dp_size_12"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/app_product_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/sky_dp_size_12"
+                    android:paddingRight="@dimen/sky_dp_size_12"
+                    android:paddingTop="@dimen/sky_dp_size_20"
+                    android:paddingBottom="@dimen/sky_dp_size_20">
+
+                    <TextView
+                        android:id="@+id/app_tmp_7_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/sky_color_black"
+                        android:textSize="@dimen/sky_font_size_18"
+                        android:text="备注：" />
+
+                    <EditText
+                        android:id="@+id/app_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sky_dp_size_90"
+                        android:textColor="@color/sky_color_808080"
+                        android:layout_toRightOf="@id/app_tmp_7_tv"
+                        android:hint="选填：对本次交易的说明(建议填写已和卖家协商一致的内容)"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:textSize="@dimen/sky_font_size_18"/>
+                </RelativeLayout>
+
+                <View style="@style/grey_0_5_horizontal_line"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_56"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/sky_color_f2f2f2">
+
+            <TextView
+                android:id="@+id/app_tmp_6_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计："
+                android:gravity="center"
+                android:textSize="@dimen/sky_font_size_18"
+                android:textColor="@color/sky_color_black"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/app_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥0.00"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sky_font_size_18"
+                android:layout_marginLeft="@dimen/sky_dp_size_2"
+                android:layout_toRightOf="@id/app_tmp_6_tv"
+                android:textColor="@color/sky_color_d50d0d"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/app_submit_tv"
+            android:layout_width="@dimen/sky_dp_size_112"
+            android:layout_height="match_parent"
+            android:text="提交订单"
+            android:textColor="@color/sky_color_white"
+            android:background="@color/main_colorPrimary"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_18"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.sky.app.library.component.banner.LoopViewPagerLayout
+                    android:id="@+id/detail_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="333dp"
+                    android:background="@color/sky_color_white" />
+
+                <TextView
+                    android:id="@+id/product_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/sky_dp_size_45"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:singleLine="true"
+                    android:text="莫木头沙发简约时尚,家具风格,莫木头沙发简约时尚,家具风格"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/sky_dp_size_17"
+                    android:paddingRight="@dimen/sky_dp_size_17">
+
+                    <TextView
+                        android:id="@+id/product_detail_newprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text="¥6666777"
+                        android:textColor="#da4932"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/product_detail_orignprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/sky_dp_size_5"
+                        android:text="原价：1000"
+                        android:textColor="#b8b8b8"
+                        android:textSize="@dimen/sky_font_size_13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/app_store_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sky_dp_size_36"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="@dimen/sky_dp_size_17"
+                    android:paddingRight="@dimen/sky_dp_size_17"
+                    android:singleLine="true"
+                    android:text="本店活动："
+                    android:textColor="#828282"
+                    android:textSize="15sp" />
+
+                <View style="@style/grey_0_5_horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sky_dp_size_35"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/sky_dp_size_17"
+                    android:paddingRight="@dimen/sky_dp_size_17">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/sky_dp_size_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="月销量"
+                            android:textColor="@color/sky_color_666666"
+                            android:textSize="@dimen/sky_font_size_15" />
+
+                        <TextView
+                            android:id="@+id/product_detail_xiaoliang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/sky_dp_size_5"
+                            android:ellipsize="end"
+                            android:maxLength="5"
+                            android:text="50000"
+                            android:textColor="#df6b5c"
+                            android:textSize="@dimen/sky_font_size_15" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/sky_dp_size_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计评价"
+                            android:textColor="@color/sky_color_666666"
+                            android:textSize="@dimen/sky_font_size_15" />
+
+                        <TextView
+                            android:id="@+id/product_detail_commentnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/sky_dp_size_5"
+                            android:maxLength="5"
+                            android:text="50000"
+                            android:textColor="#df6b5c"
+                            android:textSize="@dimen/sky_font_size_15" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sky_dp_size_12"
+                    android:background="@color/sky_color_f2f2f2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sky_dp_size_5"
+                    android:paddingBottom="@dimen/sky_dp_size_10"
+                    android:paddingLeft="@dimen/sky_dp_size_17"
+                    android:paddingRight="@dimen/sky_dp_size_17"
+                    android:paddingTop="@dimen/sky_dp_size_10"
+                    android:text="颜色分类"
+                    android:textColor="@color/sky_color_333333"
+                    android:textSize="@dimen/sky_dp_size_16" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/app_product_category_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/sky_dp_size_17"
+                    android:paddingRight="@dimen/sky_dp_size_17" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sky_dp_size_12"
+                    android:background="@color/sky_color_f2f2f2" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sky_dp_size_5"
+                    android:paddingBottom="@dimen/sky_dp_size_10"
+                    android:paddingLeft="@dimen/sky_dp_size_17"
+                    android:paddingRight="@dimen/sky_dp_size_17"
+                    android:paddingTop="@dimen/sky_dp_size_10"
+                    android:text="商品详情"
+                    android:textColor="@color/sky_color_333333"
+                    android:textSize="@dimen/sky_dp_size_16" />
+
+                <WebView
+                    android:id="@+id/app_product_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <!--分享的按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fillViewport="true"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/product_detail_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/app_shop_back_icon" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

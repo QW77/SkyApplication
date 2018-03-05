@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sky_color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/sky_dp_size_16"
+        android:paddingTop="@dimen/sky_dp_size_16">
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二级分类"
+            android:paddingLeft="@dimen/sky_dp_size_12"
+            android:paddingRight="@dimen/sky_dp_size_12"
+            android:singleLine="true"
+            android:textColor="@color/sky_color_black"
+            android:textSize="@dimen/sky_font_size_16"
+            android:gravity="center"/>
+        
+        <ImageView
+            android:id="@+id/category_name_url"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/sky_dp_size_12"
+            android:layout_marginRight="@dimen/sky_dp_size_12"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/sky_dp_size_5"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/category_desc"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="二级分类"-->
+            <!--android:paddingLeft="@dimen/sky_dp_size_12"-->
+            <!--android:paddingRight="@dimen/sky_dp_size_12"-->
+            <!--android:maxLines="2"-->
+            <!--android:textColor="@color/sky_color_black"-->
+            <!--android:textSize="@dimen/sky_font_size_14"-->
+            <!--android:gravity="start"/>-->
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scrollbars="none"-->
+            <!--android:paddingLeft="@dimen/sky_dp_size_9"-->
+            <!--android:paddingRight="@dimen/sky_dp_size_9"-->
+            <!--android:layout_gravity="center_vertical">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/recommend_product_ll"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:orientation="horizontal"/>-->
+
+        <!--</HorizontalScrollView>-->
+
+    </LinearLayout>
+
+    <View style="@style/grey_0_5_horizontal_line"/>
+
+    <com.sky.app.ui.custom.AutoHeightGridView
+        android:id="@+id/all_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_0"
+        android:layout_weight="1"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:gravity="center"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/sky_dp_size_1"
+        android:horizontalSpacing="@dimen/sky_dp_size_1"
+        android:background="@color/sky_color_f2f2f2"/>
+</LinearLayout>

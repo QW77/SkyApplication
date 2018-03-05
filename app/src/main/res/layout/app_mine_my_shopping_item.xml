@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/sky_color_f2f2f2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_42"
+        android:paddingLeft="@dimen/sky_dp_size_17"
+        android:paddingRight="@dimen/sky_dp_size_17"
+        android:background="@color/sky_color_white">
+
+        <CheckBox
+            android:id="@+id/app_sell_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:textColor="@color/sky_color_black"
+            android:textSize="@dimen/sky_font_size_18"
+            android:layout_centerVertical="true"/>
+        
+        <TextView
+            android:id="@+id/app_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_black"
+            android:text="完成"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_18"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_white">
+
+    <include layout="@layout/app_normal_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_50"
+            android:paddingLeft="@dimen/sky_dp_size_22"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/buy"
+                android:layout_width="@dimen/sky_dp_size_58"
+                android:layout_height="@dimen/sky_dp_size_20"
+                android:background="@drawable/app_btn_shape_selector"
+                android:text="发布采购"
+                android:textSize="@dimen/sky_font_size_12"
+                android:gravity="center"
+                android:button="@null"
+                android:textColor="@color/app_btn_color_shape_selector"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioButton
+                android:id="@+id/supply"
+                android:layout_width="@dimen/sky_dp_size_58"
+                android:layout_height="@dimen/sky_dp_size_20"
+                android:background="@drawable/app_btn_shape_selector"
+                android:text="发布供应"
+                android:textSize="@dimen/sky_font_size_12"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/sky_dp_size_20"
+                android:textColor="@color/app_btn_color_shape_selector"
+                android:layout_gravity="center_vertical"/>
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_12"
+            android:background="@color/sky_color_f2f2f2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_56"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/app_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:inputType="text"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:paddingRight="@dimen/sky_dp_size_22"
+                android:background="@null"
+                android:hint="输入标题"
+                android:textColorHint="@color/sky_color_808080"
+                android:textColor="@color/sky_color_333333"
+                android:textSize="@dimen/sky_font_size_18"
+                android:gravity="left|center_vertical"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_12"
+            android:background="@color/sky_color_f2f2f2"/>
+
+        <EditText
+            android:id="@+id/app_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_0"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:selectAllOnFocus="true"
+            android:hint="输入内容"
+            android:background="@null"
+            android:textColor="@color/sky_color_333333"
+            android:padding="@dimen/sky_dp_size_22"
+            android:textSize="@dimen/sky_font_size_18"/>
+
+        <TextView
+            android:id="@+id/publish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_56"
+            android:textColor="@color/sky_color_white"
+            android:text="发布"
+            android:gravity="center"
+            android:textSize="@dimen/sky_dp_size_20"
+            android:background="@color/main_colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>

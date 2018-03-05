@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    signingConfigs {
+        main_sign {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('/Users/a123123/Documents/sgin/sky_1.jks')
+            storePassword '51gongjiang'
+        }
+        main_test_sign {
+            keyAlias 'sky'
+            keyPassword '123456'
+            storeFile file('/Users/a123123/Documents/sgin/sky_test.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.sky.shop"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 25
+        versionName "2.5"
+        signingConfig signingConfigs.main_sign
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.main_sign
+        }
+        debug {
+            signingConfig signingConfigs.main_test_sign
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+repositories {
+    maven { url 'http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/' }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library')
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //必选
+    compile 'com.alibaba.mobileim:IMCore:2.0.2.1@aar'
+    //可选，如果使用SDK的UI必须添加该依赖，如果不使用SDK的UI，完全自己开发UI则无需添加该依赖
+    compile 'com.alibaba.mobileim:IMKit:2.0.2.1@aar'
+    //可选，如果使用小视频功能必须添加该依赖，如果不使用小视频功能则无需添加该依赖
+    compile 'com.alibaba.mobileim:RecorderSDK:1.0.0@aar'
+    //    compile 'com.squareup.okhttp:logging-interceptor:2.6.0'
+    compile files('libs/BaiduLBS_Android.jar')
+}

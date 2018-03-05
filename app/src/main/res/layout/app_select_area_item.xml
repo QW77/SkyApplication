@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sky_dp_size_56"
+    android:background="@color/sky_color_white"
+    android:paddingLeft="@dimen/sky_dp_size_12"
+    android:paddingRight="@dimen/sky_dp_size_12">
+
+    <TextView
+        android:id="@+id/app_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/sky_font_size_16"
+        android:textColor="@color/sky_color_333333"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/app_right_arrow_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sky.app.ui.activity.search.DecorationTwoBoutiqueActiviy">
+
+    <include layout="@layout/app_search_header" />
+    <ListView
+        android:id="@+id/boutique_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!--<com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView-->
+        <!--android:id="@+id/boutique_scrollview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:ptrMode="both">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+            <!--<com.sky.app.ui.custom.AutoHeightGridView-->
+                <!--android:id="@+id/gridview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:horizontalSpacing="3dp"-->
+                <!--android:numColumns="2"-->
+                <!--android:verticalSpacing="3dp" />-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="3dp"-->
+                <!--android:background="#f1f1f1" />-->
+            <!--<ListView-->
+                <!--android:id="@+id/boutique_listview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+    <!--</com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView>-->
+
+
+</LinearLayout>

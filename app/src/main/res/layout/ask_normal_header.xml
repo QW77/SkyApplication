@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/normal_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:minHeight="?android:attr/actionBarSize"
+    app:layout_collapseMode="pin"
+    android:theme="@style/Theme.customer.ToolBar"
+    android:background="@color/transport_colorPrimary">
+
+    <TextView
+        android:text="详情"
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/sky_font_size_20"
+        android:textColor="@color/sky_color_white"/>
+
+
+
+</android.support.v7.widget.Toolbar>

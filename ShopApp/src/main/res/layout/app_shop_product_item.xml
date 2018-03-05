@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/sky_dp_size_13"
+    android:background="@color/sky_color_white">
+
+    <ImageView
+        android:id="@+id/app_image"
+        android:layout_width="@dimen/sky_dp_size_150"
+        android:layout_height="@dimen/sky_dp_size_150"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sky_dp_size_3">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_333333"
+            android:textSize="@dimen/sky_font_size_15"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/app_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_d50d0d"
+            android:textSize="@dimen/sky_font_size_15"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="¥0.00"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_30"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/sky_dp_size_5">
+
+        <LinearLayout
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="@dimen/sky_dp_size_40"
+                android:layout_height="@dimen/sky_dp_size_24"
+                android:background="@drawable/app_order_selected_shape_selector"
+                android:text="编辑"
+                android:textColor="@color/sky_color_white"
+                android:textSize="@dimen/sky_font_size_14"
+                android:gravity="center"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:id="@+id/upAndDown"
+                android:layout_width="@dimen/sky_dp_size_40"
+                android:layout_height="@dimen/sky_dp_size_24"
+                android:background="@drawable/app_order_selected_shape_selector"
+                android:text="下架"
+                android:gravity="center"
+                android:textColor="@color/sky_color_white"
+                android:textSize="@dimen/sky_font_size_14"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sky_dp_size_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/del"
+                android:layout_width="@dimen/sky_dp_size_40"
+                android:layout_height="@dimen/sky_dp_size_24"
+                android:background="@drawable/app_order_selected_shape_selector"
+                android:text="删除"
+                android:textColor="@color/sky_color_white"
+                android:textSize="@dimen/sky_font_size_14"
+                android:gravity="center"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

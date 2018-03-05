@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/item_my_family"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/nim_contact_list_item_selecter">
+
+
+            <TextView
+                android:id="@+id/my_family_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="我的家族"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_all_family"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/nim_contact_list_item_selecter">
+
+
+            <TextView
+                android:id="@+id/all_family_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="粉丝家族"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_my_fans"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/nim_contact_list_item_selecter">
+
+
+            <TextView
+                android:id="@+id/my_fans_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+               android:padding="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我的粉丝"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_my_friends"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/nim_contact_list_item_selecter">
+
+
+            <TextView
+                android:id="@+id/my_friends_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="我的好友"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

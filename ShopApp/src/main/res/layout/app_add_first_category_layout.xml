@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/driver_pop_layout"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="@color/sky_color_transparent_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/sky_dp_size_10">
+
+        <EditText
+            android:id="@+id/first_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_48"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:background="@color/sky_color_white"
+            android:hint="请输入一级分类"
+            android:gravity="center"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/sky_dp_size_5"
+            android:paddingRight="@dimen/sky_dp_size_5"
+            android:textColorHint="@color/sky_color_cccccc"
+            android:textColor="@color/main_colorPrimary"
+            android:textSize="@dimen/sky_font_size_16"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/sky_dp_size_15">
+
+            <Button
+                android:id="@+id/app_save_btn"
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:layout_height="@dimen/sky_dp_size_48"
+                android:text="保存"
+                android:gravity="center"
+                android:textColor="@color/driver_colorPrimary"
+                android:textSize="@dimen/sky_font_size_18"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/app_photo_cancel_selector"
+                android:textStyle="bold"/>
+
+            <View style="@style/grey_0_5_vertical_line"/>
+
+            <Button
+                android:id="@+id/app_cancel_btn"
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_weight="1"
+                android:layout_height="@dimen/sky_dp_size_48"
+                android:text="取消"
+                android:gravity="center"
+                android:textColor="@color/driver_colorPrimary"
+                android:textSize="@dimen/sky_font_size_18"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/app_photo_cancel_selector"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

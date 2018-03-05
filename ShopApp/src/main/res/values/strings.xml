@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">51工匠卖家版</string>
+    <string name="app_forget_pwd_string">找回密码</string>
+    <string name="app_login_string">登录</string>
+    <string name="app_code_string">获取验证码</string>
+    <string name="app_register_string">注册</string>
+    <string name="app_message_center_string">消息中心</string>
+    <string name="app_order_manage_string">订单管理</string>
+    <string name="app_order_manage_string1">通知中心</string>
+    <string name="app_shop_decorate_string">店铺装修</string>
+    <string name="app_account_string">账户中心</string>
+    <string name="app_safe_center_string">安全中心</string>
+    <string name="app_second_category_string">二级目录</string>
+    <string name="app_add_product_string">商品添加</string>
+    <string name="app_edit_product_string">商品编辑</string>
+    <string name="app_shop_data_string">商家资料</string>
+    <string name="app_save_string">保存</string>
+    <string name="add_account_apply_string">增加提现账户</string>
+    <string name="add_record_string">浏览记录</string>
+    <string name="add_card_string">名片装修</string>
+    <string name="add_home_page_string">主页装修</string>
+    <string name="app_card_string">名片装修</string>
+    <string name="app_card_edit_string">名片简介编辑</string>
+    <string name="app_home_page_decorate_string">主页装修</string>
+    <string name="app_home_page_edit_string">主页简介编辑</string>
+    <string name="app_case_string">编辑案例</string>
+    <string name="app_case_edit_string">案例详情编辑</string>
+    <string name="app_navigation_drawer_open">打开</string>
+    <string name="app_navigation_drawer_close">关闭</string>
+</resources>

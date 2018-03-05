@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--搜索栏-->
+    <include layout="@layout/app_search_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.sky.app.library.component.banner.LoopViewPagerLayout
+            android:id="@+id/mLoopViewPagerLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:background="@color/sky_color_white" />
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/mLoopViewPagerLayout11"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="110dp"-->
+        <!--android:background="@color/sky_color_white"></android.support.v4.view.ViewPager>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/dot_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:background="#fff"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#f2f2f2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/zhuangshicheng_zhaodian"
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f2f2f2"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:onClick="boutique"
+                    android:orientation="vertical"
+                    android:paddingRight="0.5dp">
+
+                    <ImageView
+                        android:id="@+id/app_city_1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:src="@mipmap/decoration_zhaodian" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="3dp"
+                        android:text="精品店"
+                        android:textColor="@color/sky_color_333333"
+                        android:textSize="@dimen/sky_font_size_12" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zhuangshicheng_pingmiantu"
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f2f2f2"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/decoration_pingmian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:onClick="plane"
+                    android:orientation="vertical"
+                    android:paddingLeft="0.5dp">
+
+                    <ImageView
+                        android:id="@+id/app_city_3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:src="@mipmap/decoration_pingmaintu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="3dp"
+                        android:text="市场平面图"
+                        android:textColor="@color/sky_color_333333"
+                        android:textSize="@dimen/sky_font_size_12" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zhuangshicheng_action"
+                android:layout_width="@dimen/sky_dp_size_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:onClick="Action">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="0.5dp">
+
+                    <ImageView
+                        android:id="@+id/app_city_4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:src="@mipmap/decoration_huodong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="3dp"
+                        android:text="活动"
+                        android:textColor="@color/sky_color_333333"
+                        android:textSize="@dimen/sky_font_size_12" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:id="@+id/navigate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ditu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:text="江苏省南京市雨花台"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/app_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="*** m" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@mipmap/daohang_tubiao"
+                    android:gravity="center"
+                    android:text="导航" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:id="@+id/decoration_city_linear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@mipmap/decoration_toutiao" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextSwitcher
+                    android:id="@+id/app_sh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp" />
+
+                <!--<com.sky.app.library.component.scroll_txt.VerticalBannerView-->
+                <!--android:id="@+id/decoration_city_toutiao"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/grey"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--app:animDuration="10000"-->
+                <!--app:gap="2000" />-->
+
+                <!--<com.sky.app.library.component.scroll_txt.VerticalBannerView-->
+                <!--android:id="@+id/decoration_city_toutiao1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/grey"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--app:animDuration="10000"-->
+                <!--app:gap="2000" />-->
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"
+                android:src="@mipmap/app_home_img_9" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/decoration_listview_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView
+                android:id="@+id/scrollview1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                app:ptrMode="both">
+
+                <com.sky.app.ui.custom.AutoHeightListView
+                    android:id="@+id/decoration_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </com.sky.app.library.component.pulltorefresh.PullToRefreshScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

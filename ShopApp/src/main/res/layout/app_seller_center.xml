@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky_color_white"
+        style="@style/can_click_layout">
+
+        <!--搜索栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/transport_colorPrimary">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sky_font_size_20"
+                android:textColor="@color/sky_color_white"
+                android:text="@string/app_home_page_decorate_string"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/app_shop_icon"
+                android:layout_width="@dimen/sky_dp_size_20"
+                android:layout_height="@dimen/sky_dp_size_16"
+                android:src="@mipmap/app_left_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/sky_dp_size_20"/>
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/app_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sky_dp_size_112"
+                        android:background="#80000000">
+
+                        <ImageView
+                            android:id="@+id/shop_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/app_default_icon_1"/>
+
+                        <ImageView
+                            android:id="@+id/shop_img"
+                            android:layout_width="@dimen/sky_dp_size_45"
+                            android:layout_height="@dimen/sky_dp_size_45"
+                            android:src="@mipmap/app_default_icon"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/sky_dp_size_12"/>
+
+                        <TextView
+                            android:id="@+id/app_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/sky_color_white"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:maxEms="10"
+                            android:textSize="@dimen/sky_font_size_18"
+                            android:text="dddd"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@id/shop_img"
+                            android:layout_marginLeft="@dimen/sky_dp_size_7"
+                            android:layout_marginBottom="@dimen/sky_dp_size_7"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/sky_color_white"
+                        android:layout_marginTop="@dimen/sky_dp_size_12">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/sky_dp_size_12"
+                            android:paddingBottom="@dimen/sky_dp_size_12"
+                            android:paddingRight="@dimen/sky_dp_size_12">
+
+                            <TextView
+                                android:id="@+id/main_edit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/sky_color_87d395"
+                                android:textSize="@dimen/sky_font_size_15"
+                                android:gravity="center"
+                                android:layout_gravity="right|center_vertical"
+                                android:text="编辑"
+                                android:layout_marginBottom="@dimen/sky_dp_size_5"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="主营业务"
+                                    android:gravity="center"
+                                    android:textColor="@color/main_colorPrimary"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:background="@mipmap/app_seller_center_flag_icon"/>
+
+                                <TextView
+                                    android:id="@+id/app_main_sell"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/sky_dp_size_8"
+                                    android:background="@mipmap/app_seller_center_bg_icon"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:gravity="start|center_vertical"
+                                    android:textColor="@color/sky_color_black"
+                                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                                    android:singleLine="true"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/sky_dp_size_15">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="设计理念"
+                                    android:gravity="center"
+                                    android:textColor="@color/main_colorPrimary"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:background="@mipmap/app_seller_center_flag_icon"/>
+
+                                <TextView
+                                    android:id="@+id/app_design_idea"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/sky_dp_size_8"
+                                    android:background="@mipmap/app_seller_center_bg_icon"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:gravity="start|center_vertical"
+                                    android:textColor="@color/sky_color_black"
+                                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                                    android:maxLines="2"
+                                    android:ellipsize="end"
+                                    android:paddingTop="@dimen/sky_dp_size_3"
+                                    android:paddingBottom="@dimen/sky_dp_size_3"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/sky_dp_size_15">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="学历专业"
+                                    android:gravity="center"
+                                    android:textColor="@color/main_colorPrimary"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:background="@mipmap/app_seller_center_flag_icon"/>
+
+                                <TextView
+                                    android:id="@+id/app_prof"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/sky_dp_size_8"
+                                    android:background="@mipmap/app_seller_center_bg_icon"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:gravity="start|center_vertical"
+                                    android:textColor="@color/sky_color_black"
+                                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                                    android:singleLine="true"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/sky_dp_size_15">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="奖项荣誉"
+                                    android:gravity="center"
+                                    android:textColor="@color/main_colorPrimary"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:background="@mipmap/app_seller_center_flag_icon"/>
+
+                                <TextView
+                                    android:id="@+id/app_award"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/sky_dp_size_8"
+                                    android:background="@mipmap/app_seller_center_bg_icon"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:gravity="start|center_vertical"
+                                    android:textColor="@color/sky_color_black"
+                                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                                    android:singleLine="true"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/sky_dp_size_15">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="代表作品"
+                                    android:gravity="center"
+                                    android:textColor="@color/main_colorPrimary"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:background="@mipmap/app_seller_center_flag_icon"/>
+
+                                <TextView
+                                    android:id="@+id/app_work"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/sky_dp_size_8"
+                                    android:background="@mipmap/app_seller_center_bg_icon"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:gravity="start|center_vertical"
+                                    android:textColor="@color/sky_color_black"
+                                    android:layout_marginLeft="@dimen/sky_dp_size_12"
+                                    android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sky_dp_size_12"
+                            android:background="@color/sky_color_f2f2f2"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sky_dp_size_46"
+                            android:paddingLeft="@dimen/sky_dp_size_12"
+                            android:paddingRight="@dimen/sky_dp_size_12">
+
+                            <TextView
+                                android:id="@+id/qq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:textSize="@dimen/sky_font_size_15"
+                                android:drawableLeft="@mipmap/app_person_qq_icon"
+                                android:drawablePadding="@dimen/sky_dp_size_5"/>
+
+                            <TextView
+                                android:id="@+id/weixin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center"
+                                android:textSize="@dimen/sky_font_size_15"
+                                android:minWidth="@dimen/sky_dp_size_90"
+                                android:drawableLeft="@mipmap/app_person_weixin_icon"
+                                android:drawablePadding="@dimen/sky_dp_size_5"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sky_dp_size_12"
+                            android:background="@color/sky_color_f2f2f2"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sky_dp_size_0"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/sky_dp_size_17"
+                            android:paddingLeft="@dimen/sky_dp_size_17"
+                            android:paddingRight="@dimen/sky_dp_size_17">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="案例展示"
+                                    android:textColor="@color/sky_color_333333"
+                                    android:textSize="@dimen/sky_font_size_18"
+                                    android:layout_alignParentLeft="true"/>
+
+                                <TextView
+                                    android:id="@+id/case_edit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="编辑"
+                                    android:textColor="@color/sky_color_87d395"
+                                    android:textSize="@dimen/sky_font_size_15"
+                                    android:layout_alignParentRight="true"/>
+
+                            </RelativeLayout>
+
+                            <com.sky.shop.custom.AutoHeightGridView
+                                android:id="@+id/app_case_list_rv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:numColumns="2"
+                                android:horizontalSpacing="@dimen/sky_dp_size_25"
+                                android:verticalSpacing="@dimen/sky_dp_size_8"
+                                android:scrollbars="none"
+                                android:gravity="center"
+                                android:fadingEdge="none"
+                                android:listSelector="#00000000"
+                                android:background="@color/sky_color_white"
+                                android:paddingLeft="@dimen/sky_dp_size_17"
+                                android:paddingRight="@dimen/sky_dp_size_17"
+                                android:layout_marginTop="@dimen/sky_dp_size_17"
+                                android:layout_centerVertical="true"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <!-- 侧边栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:background="@color/sky_color_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_117">
+
+            <RelativeLayout
+                android:id="@+id/app_shop_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_81"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/app_picture"
+                    android:layout_width="@dimen/sky_dp_size_36"
+                    android:layout_height="@dimen/sky_dp_size_36"
+                    android:src="@mipmap/app_default_icon"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="@dimen/sky_dp_size_9"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/app_sider_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/normal_sider_font_style"
+                    android:layout_toRightOf="@id/app_picture"
+                    android:layout_marginLeft="@dimen/sky_dp_size_8"
+                    android:layout_alignBottom="@id/app_picture"
+                    android:layout_marginBottom="@dimen/sky_dp_size_8"
+                    android:text="1234567890"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/grey_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/sky_dp_size_17"
+            android:layout_marginRight="@dimen/sky_dp_size_10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/sky_dp_size_10">
+
+            <LinearLayout
+                android:id="@+id/app_account_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/app_shop_purse_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户中心"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_browser_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/app_shop_browser_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="浏览记录"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_safe_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/app_shop_safe_icon"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全中心"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

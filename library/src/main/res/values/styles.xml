@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <!-- 底部弹层动画 -->
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/driver_pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/driver_pop_exit_anim</item>
+    </style>
+
+    <!-- 自定义dialog -->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@color/sky_color_transparent_white</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 可点击的layout -->
+    <style name="can_click_layout">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <!-- 水平线 -->
+    <style name="login_grey_horizontal_line">
+        <item name="android:background">@color/sky_color_b3b3b3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/sky_dp_size_1</item>
+    </style>
+    <style name="login_grey_vertical_line">
+        <item name="android:background">@color/sky_color_b3b3b3</item>
+        <item name="android:layout_width">@dimen/sky_dp_size_1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="grey_horizontal_line">
+        <item name="android:background">@color/sky_color_e6e6e6</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/sky_dp_size_1</item>
+    </style>
+    <style name="grey_0_3_horizontal_line">
+        <item name="android:background">@color/sky_color_e4e4e4</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.3dp</item>
+    </style>
+    <style name="grey_0_5_horizontal_line">
+        <item name="android:background">@color/sky_color_e4e4e4</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+    <style name="grey_0_5_vertical_line">
+        <item name="android:background">@color/sky_color_e4e4e4</item>
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="black_0_5_horizontal_line">
+        <item name="android:background">@color/sky_color_333333</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">72dip</item>
+        <item name="maxWidth">72dip</item>
+        <item name="minHeight">72dip</item>
+        <item name="maxHeight">72dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">36dip</item>
+        <item name="maxWidth">36dip</item>
+        <item name="minHeight">36dip</item>
+        <item name="maxHeight">36dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/producedetail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_color_white">
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/tinjia_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/xiao_jiahao" />
+</RelativeLayout>

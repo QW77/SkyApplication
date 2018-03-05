@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/sky_color_333333">
+
+    <!--矩形边界-->
+    <item android:drawable="@drawable/app_send_code_shape"/>
+</ripple>

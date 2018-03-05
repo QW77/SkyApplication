@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sky_color_f2f2f2">
+
+    <include layout="@layout/app_normal_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_67"
+        android:background="@color/sky_color_white"
+        android:paddingLeft="@dimen/sky_dp_size_17"
+        android:paddingRight="@dimen/sky_dp_size_17">
+
+        <RelativeLayout
+            android:id="@+id/app_img_tmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_image_shape"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/app_image"
+                android:layout_width="@dimen/sky_dp_size_48"
+                android:layout_height="@dimen/sky_dp_size_48"
+                android:scaleType="centerCrop"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/app_seller_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_black"
+            android:textSize="@dimen/sky_font_size_20"
+            android:text="大功率"
+            android:layout_alignTop="@id/app_img_tmp"
+            android:layout_toRightOf="@id/app_img_tmp"
+            android:layout_marginTop="@dimen/sky_dp_size_4"
+            android:layout_marginLeft="@dimen/sky_dp_size_12"/>
+
+        <TextView
+            android:id="@+id/app_collect_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sky_color_b8b8b8"
+            android:textSize="@dimen/sky_font_size_12"
+            android:text="大功率"
+            android:layout_alignBottom="@id/app_img_tmp"
+            android:layout_toRightOf="@id/app_img_tmp"
+            android:layout_marginBottom="@dimen/sky_dp_size_2"
+            android:layout_marginLeft="@dimen/sky_dp_size_12"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/sky_dp_size_4"
+            android:drawableLeft="@mipmap/app_collect_grey_icon"/>
+
+
+        <Button
+            android:id="@+id/shop_collect"
+            android:layout_width="@dimen/sky_dp_size_72"
+            android:layout_height="@dimen/sky_dp_size_24"
+            android:background="@drawable/app_order_selected_shape_selector"
+            android:text="收藏店铺"
+            android:textColor="@color/sky_color_white"
+            android:textSize="@dimen/sky_font_size_14"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_86"
+        android:background="@color/sky_color_white"
+        android:padding="@dimen/sky_dp_size_17"
+        android:layout_marginTop="@dimen/sky_dp_size_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="掌柜描述"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_16"
+            android:textColor="@color/sky_color_black"/>
+
+        <TextView
+            android:id="@+id/app_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="掌柜描述大量的撒过了就撒的感觉撒登录国家的撒了个叫撒娇过来噶蛋糕放大了哈里哈就会拉近哈里哈"
+            android:lineSpacingExtra="@dimen/sky_dp_size_2"
+            android:layout_marginLeft="@dimen/sky_dp_size_73"
+            android:gravity="start"
+            android:textSize="@dimen/sky_font_size_16"
+            android:singleLine="false"
+            android:scrollbars="none"
+            android:textColor="@color/sky_color_b8b8b8"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_86"
+        android:background="@color/sky_color_white"
+        android:padding="@dimen/sky_dp_size_17"
+        android:layout_marginTop="@dimen/sky_dp_size_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主营"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_16"
+            android:textColor="@color/sky_color_black"/>
+
+        <TextView
+            android:id="@+id/app_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="掌柜描述大量的撒过了就撒的感觉撒登录国家的撒了个叫撒娇过来噶蛋糕放大了哈里哈就会拉近哈里哈"
+            android:lineSpacingExtra="@dimen/sky_dp_size_2"
+            android:layout_marginLeft="@dimen/sky_dp_size_73"
+            android:gravity="start"
+            android:textSize="@dimen/sky_font_size_16"
+            android:singleLine="false"
+            android:scrollbars="none"
+            android:textColor="@color/sky_color_b8b8b8"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sky_dp_size_67"
+        android:background="@color/sky_color_white"
+        android:padding="@dimen/sky_dp_size_17"
+        android:layout_marginTop="@dimen/sky_dp_size_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:gravity="center"
+            android:textSize="@dimen/sky_font_size_16"
+            android:textColor="@color/sky_color_black"/>
+
+        <TextView
+            android:id="@+id/app_addr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="掌柜描述大量的撒过了就撒的感觉撒登录国家的撒了个叫撒娇过来噶蛋糕放大了哈里哈就会拉近哈里哈"
+            android:lineSpacingExtra="@dimen/sky_dp_size_2"
+            android:layout_marginLeft="@dimen/sky_dp_size_73"
+            android:gravity="start"
+            android:textSize="@dimen/sky_font_size_16"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:scrollbars="none"
+            android:textColor="@color/sky_color_b8b8b8"/>
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/sky_dp_size_132"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/sky_color_white"-->
+        <!--android:padding="@dimen/sky_dp_size_17"-->
+        <!--android:layout_marginTop="@dimen/sky_dp_size_12">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/sky_dp_size_0"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/sky_dp_size_24"-->
+                <!--android:layout_height="@dimen/sky_dp_size_24"-->
+                <!--android:src="@mipmap/app_call_phone_icon"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/app_mobile"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="15077882504"-->
+                <!--android:layout_marginLeft="@dimen/sky_dp_size_73"-->
+                <!--android:gravity="start"-->
+                <!--android:textSize="@dimen/sky_font_size_16"-->
+                <!--android:textColor="@color/sky_color_b8b8b8"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/sky_dp_size_0"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/sky_dp_size_24"-->
+                <!--android:layout_height="@dimen/sky_dp_size_24"-->
+                <!--android:src="@mipmap/app_person_qq_icon"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/app_qq"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="921360458"-->
+                <!--android:layout_marginLeft="@dimen/sky_dp_size_73"-->
+                <!--android:gravity="start"-->
+                <!--android:textSize="@dimen/sky_font_size_16"-->
+                <!--android:textColor="@color/sky_color_b8b8b8"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/sky_dp_size_0"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/sky_dp_size_24"-->
+                <!--android:layout_height="@dimen/sky_dp_size_24"-->
+                <!--android:src="@mipmap/app_person_weixin_icon"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/app_weixin"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="23346346346"-->
+                <!--android:layout_marginLeft="@dimen/sky_dp_size_73"-->
+                <!--android:gravity="start"-->
+                <!--android:textSize="@dimen/sky_font_size_16"-->
+                <!--android:textColor="@color/sky_color_b8b8b8"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

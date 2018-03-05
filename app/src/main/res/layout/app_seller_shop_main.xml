@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:id="@+id/app_framework_rl">
+
+        <LinearLayout
+            android:id="@+id/app_navigarion_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/sky_color_white"
+            android:gravity="center">
+
+            <com.sky.app.library.component.TabRaidoButton
+                android:id="@+id/app_message"
+                style="@style/tab_navigation_style"
+                app:image_down="@mipmap/app_message_center_selected"
+                app:image_up="@mipmap/app_message_center_unselected"
+                app:textOne="@string/app_message_center_string" />
+
+            <com.sky.app.library.component.TabRaidoButton
+                android:id="@+id/app_order"
+                style="@style/tab_navigation_style"
+                android:layout_gravity="center"
+                app:image_down="@mipmap/app_order_manage_selected"
+                app:image_up="@mipmap/app_order_manage_unselected"
+                app:textOne="@string/app_order_manage_string" />
+
+            <com.sky.app.library.component.TabRaidoButton
+                android:id="@+id/app_decorate"
+                style="@style/tab_navigation_style"
+                android:layout_gravity="center"
+                app:image_down="@mipmap/app_shop_decorate_selected"
+                app:image_up="@mipmap/app_shop_decorate_unselected"
+                app:textOne="@string/app_shop_decorate_string" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/driver_content_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/app_navigarion_ll" />
+
+        <View style="@style/grey_0_3_horizontal_line"
+            android:layout_above="@id/app_navigarion_ll"/>
+    </RelativeLayout>
+
+    <!-- 侧边栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:background="@color/sky_color_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sky_dp_size_117">
+
+            <RelativeLayout
+                android:id="@+id/app_shop_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_81"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/app_picture"
+                    android:layout_width="@dimen/sky_dp_size_36"
+                    android:layout_height="@dimen/sky_dp_size_36"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginLeft="@dimen/sky_dp_size_9"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/app_sider_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/normal_sider_font_style"
+                    android:layout_toRightOf="@id/app_picture"
+                    android:layout_marginLeft="@dimen/sky_dp_size_8"
+                    android:layout_alignBottom="@id/app_picture"
+                    android:layout_marginBottom="@dimen/sky_dp_size_8"
+                    android:text="1234567890"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/grey_horizontal_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/sky_dp_size_17"
+            android:layout_marginRight="@dimen/sky_dp_size_10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/sky_dp_size_10">
+
+            <LinearLayout
+                android:id="@+id/app_account_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/app_shop_purse_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户中心"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_browser_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/app_shop_browser_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="浏览记录"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_safe_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sky_dp_size_50"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/sky_dp_size_22"
+                android:gravity="center_vertical"
+                style="@style/normal_viewgroup_selector">
+
+                <ImageView
+                    android:layout_width="@dimen/sky_dp_size_18"
+                    android:layout_height="@dimen/sky_dp_size_18"
+                    android:src="@mipmap/app_shop_safe_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全中心"
+                    style="@style/normal_sider_font_style"
+                    android:layout_marginLeft="@dimen/sky_dp_size_38"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

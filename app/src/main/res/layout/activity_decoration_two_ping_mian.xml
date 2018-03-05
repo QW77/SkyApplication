@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--搜索栏-->
+    <include layout="@layout/app_search_header" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ping_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <ImageView
+            android:id="@+id/ping_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:src="@mipmap/decoration_city_img1" />
+
+    <!--</LinearLayout>-->
+    <!--<ListView-->
+    <!--android:id="@+id/ping_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ping_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:src="@mipmap/decoration_city_img1" />-->
+
+</LinearLayout>

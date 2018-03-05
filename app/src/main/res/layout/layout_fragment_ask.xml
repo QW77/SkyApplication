@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_normal_header" />
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/aliwx_white"-->
+    <!--app:tabIndicatorColor="@color/main_colorPrimary"-->
+    <!--app:tabMode="scrollable"-->
+    <!--app:tabSelectedTextColor="@color/aliwx_black"-->
+    <!--app:tabTextColor="@color/aliwx_color_gray_01" />-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:background="@color/aliwx_color_n2_2"-->
+    <!--android:id="@+id/viewPager_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂时没有评论"
+        android:textSize="25sp" />
+</LinearLayout>
