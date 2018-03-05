@@ -21,10 +21,10 @@ android {
     defaultConfig {
         applicationId "com.sky.app"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 25
         versionCode 30
         versionName "3.0"
-//        signingConfig signingConfigs.main_sign
+        signingConfig signingConfigs.main_sign
         multiDexEnabled true
     }
     buildTypes {

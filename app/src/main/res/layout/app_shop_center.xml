@@ -54,6 +54,20 @@
             android:layout_marginRight="@dimen/sky_dp_size_17"
             android:layout_marginBottom="@dimen/sky_dp_size_7"
             style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/shop_share"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/sky_dp_size_72"
+            android:layout_height="@dimen/sky_dp_size_24"
+            android:background="@drawable/app_order_selected_shape_selector"
+            android:text="分享店铺"
+            android:layout_alignEnd="@id/shop_collect"
+            android:textColor="@color/sky_color_white"
+            android:textSize="@dimen/sky_font_size_14"
+            android:layout_alignRight="@id/shop_collect"
+            android:layout_marginTop="7dp"
+            />
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -99,6 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
+                    android:maxLines="1"
                     android:text="*** m" />
             </LinearLayout>
 

@@ -532,18 +532,17 @@ public class    ProductDetailActivity extends BaseViewActivity<ShopContract.IPro
         // imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
 //        oks.setImagePath(Environment.getExternalStorageDirectory().getPath()+"/sdcard/test.jpg");//确保SDcard下面存在此张图片
         // url仅在微信（包括好友和朋友圈）中使用
-        oks.setUrl(Constants.Url.BASE_URL+"h5_product/un/product_detail?product_id="+productDeatilResponse.getProduct_id()+"&user_id="+productDeatilResponse.getUser_id());
+        oks.setUrl(Constants.Url.BASE_URL+"h5_product/un/product_detail?product_id="+productDeatilResponse.getProduct_id()+"&user_id="+productDeatilResponse.getUser_id()+"&machine_model=android");
         // comment是我对这条分享的评论，仅在人人网和QQ空间使用
 //        oks.setComment("我是测试评论文本");
         // site是分享此内容的网站名称，仅在QQ空间使用
         oks.setSite("51工匠");
         // siteUrl是分享此内容的网站地址，仅在QQ空间使用
-        oks.setSiteUrl(Constants.Url.BASE_URL+"h5_product/un/product_detail?product_id="+productDeatilResponse.getProduct_id()+"&user_id="+productDeatilResponse.getUser_id());
+        oks.setSiteUrl(Constants.Url.BASE_URL+"h5_product/un/product_detail?product_id="+productDeatilResponse.getProduct_id()+"&user_id="+productDeatilResponse.getUser_id()+"&machine_model=android");
         //网络图片的url：所有平台
         oks.setImageUrl(productDeatilResponse.getProduct_image_url());//网络图片rul
         // Url：仅在QQ空间使用
-        oks.setTitleUrl(Constants.Url.BASE_URL+"h5_product/un/product_detail?product_id="+productDeatilResponse.getProduct_id()+"&user_id="+productDeatilResponse.getUser_id());  //网友点进链接后，可以看到分享的详情
-//        oks.setTitleUrl("http://api.app.51craftsman.com/cc.jsp?type=decoration&id=180126059586&user_id=170922011253&machine_id=180126059586");  //网友点进链接后，可以看到分享的详情
+        oks.setTitleUrl(Constants.Url.BASE_URL+"h5_product/un/product_detail?product_id="+productDeatilResponse.getProduct_id()+"&user_id="+productDeatilResponse.getUser_id()+"&machine_model=android");  //网友点进链接后，可以看到分享的详情
 
 
         // 启动分享GUI

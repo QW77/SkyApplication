@@ -78,5 +78,19 @@ public class SearchProductRequest extends Page{
     public void setTwo_dir_id(String two_dir_id) {
         this.two_dir_id = two_dir_id;
     }
+
+    @Override
+    public String toString() {
+        return "SearchProductRequest{" +
+                "user_id='" + user_id + '\'' +
+                ", product_name='" + product_name + '\'' +
+                ", min_price='" + min_price + '\'' +
+                ", max_price='" + max_price + '\'' +
+                ", order_by='" + order_by + '\'' +
+                ", one_dir_id='" + one_dir_id + '\'' +
+                ", two_dir_id='" + two_dir_id + '\'' +
+                ", state=" + state +
+                '}';
+    }
 }
 

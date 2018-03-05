@@ -71,4 +71,17 @@ public class ProductCategory {
     public void setIcon_image_url(String icon_image_url) {
         this.icon_image_url = icon_image_url;
     }
+
+    @Override
+    public String toString() {
+        return "ProductCategory{" +
+                "one_dir_id='" + one_dir_id + '\'' +
+                ", one_dir_name='" + one_dir_name + '\'' +
+                ", two_dir_id='" + two_dir_id + '\'' +
+                ", two_dir_name='" + two_dir_name + '\'' +
+                ", company_id='" + company_id + '\'' +
+                ", icon_image_url='" + icon_image_url + '\'' +
+                ", two_dirs=" + two_dirs +
+                '}';
+    }
 }

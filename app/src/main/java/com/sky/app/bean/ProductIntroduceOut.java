@@ -206,4 +206,32 @@ public class ProductIntroduceOut implements Serializable{
     public void setPost_code(String post_code) {
         this.post_code = post_code;
     }
+
+    @Override
+    public String toString() {
+        return "ProductIntroduceOut{" +
+                "user_id='" + user_id + '\'' +
+                ", nick_name='" + nick_name + '\'' +
+                ", pic_url='" + pic_url + '\'' +
+                ", personal_pic='" + personal_pic + '\'' +
+                ", qq='" + qq + '\'' +
+                ", weixin='" + weixin + '\'' +
+                ", is_collect=" + is_collect +
+                ", mobile='" + mobile + '\'' +
+                ", main_business_desc='" + main_business_desc + '\'' +
+                ", worktime='" + worktime + '\'' +
+                ", design_concept='" + design_concept + '\'' +
+                ", awards_honor='" + awards_honor + '\'' +
+                ", representative_works='" + representative_works + '\'' +
+                ", schooling_professional='" + schooling_professional + '\'' +
+                ", post_code='" + post_code + '\'' +
+                ", num_collect=" + num_collect +
+                ", address='" + address + '\'' +
+                ", num_comment=" + num_comment +
+                ", num_good=" + num_good +
+                ", shoper_desc='" + shoper_desc + '\'' +
+                ", longitude='" + longitude + '\'' +
+                ", latitude='" + latitude + '\'' +
+                '}';
+    }
 }
